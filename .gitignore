@@ -1,0 +1,14 @@
+# Hugo build output
+/public/
+/resources/_gen/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editor junk
+.vscode/*
+!.vscode/extensions.json
+
+# Environment
+.env

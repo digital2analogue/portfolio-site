@@ -1,0 +1,153 @@
+---
+title: "Building OTKit: From Drift to Discipline"
+slug: "ot-design-system"
+company: "OpenTable"
+main_image: "/projects/images/casestudy-otkit.png"
+role: "Design Systems Lead"
+timeline: "1 year"
+featured: true
+tags:
+  - design systems
+  - tokens
+  - governance
+  - accessibility
+  - enterprise UX
+
+params:
+  featured: true          # Show in featured section on homepage
+  weight: 1               # Flagship project
+  showInPostList: false   # Exclude from blog timeline
+---
+
+
+## Overview
+OTKit is OpenTable’s design system supporting Restaurant and Diner products across iOS, Android, and web. When I took ownership, the system existed—but lacked cohesion, governance, and trust. Design drift, fragmented sources of truth, and inconsistent adoption were slowing teams down and introducing costly QA issues.
+
+My mandate was not just to redesign components, but to **turn a drifting system into an operational platform** that teams actually relied on.
+
+---
+
+## The Problem
+Design system drift was expensive and invisible.
+
+Research through user surveys and 1:1 interviews revealed:
+- **Three competing sources of truth** (Figma, Storybook, internal token sites)
+- Visual inconsistencies across products and platforms
+- Late-stage QA bugs tied directly to token and component mismatch
+
+We estimated the cost of drift at **~$237K/year** in inefficiency and rework.
+
+> Systems don’t fail because of missing components.  
+> They fail because teams stop trusting them.
+
+---
+
+## Constraints
+- Six product and platform teams shipping in parallel
+- Legacy UI patterns deeply embedded in production
+- No mandate authority—adoption had to be earned
+- Cross-platform requirements (iOS, Android, Web)
+
+---
+
+## Strategy
+I focused on **foundations first**, then scaled upward:
+
+1. **Tokens before components**
+2. **Accessibility as a forcing function**
+3. **Governance through relationships, not rules**
+4. **Documentation as a product**
+
+---
+
+## Foundations: Tokens, Type, Icons
+
+### Color tokens
+- Audited and documented all existing colors
+- Identified contrast and semantic inconsistencies
+- Rebuilt the color system around **accessible, semantic tokens**
+
+This resolved cases where critical secondary actions appeared disabled and improved cross-platform parity.
+
+> Accessibility wasn’t a compliance checkbox—it was how we justified change.
+
+---
+
+### Contextual typography
+The existing type system was a one-size-fits-all scale that:
+- Was not mobile-optimized
+- Encouraged incorrect font usage in native apps
+- Had ballooned to **39 fonts in the codebase**
+
+**Solution**
+- Introduced a contextual typography scale by platform
+- Defined size, weight, and family per context
+- Added support for Apple Dynamic Type
+
+**Impact**
+A/B testing showed a **+2.19% increase in diner bookings** on pages using dynamic type.
+
+---
+
+### Icon system
+- Introduced shape-based icon grids
+- Unified keyshapes for indicators
+- Centralized icon repositories across platforms
+- Added SF Symbol parity for accessibility
+
+This enabled a **searchable, themeable SVG system** for native and web teams.
+
+---
+
+## Brand Evolution: “Black Is the New Red”
+OpenTable operates in an industry dominated by red and orange. Partnering closely with Brand, we translated a premium direction into a **tokenized theming architecture** rather than one-off visual treatments.
+
+This enabled:
+- Two new font families
+- A refreshed color palette
+- Visual distinction for Iconic restaurants
+- Brand evolution without breaking product consistency
+
+---
+
+## Theming in Practice
+We delivered multiple system-driven themes:
+
+### Mass Theme
+- Editorial-style layout
+- Two-column structure inspired by e-commerce
+- Booking surfaced immediately
+- Minimal concepts guiding all components
+
+### Iconic Theme
+- Full-bleed imagery
+- Dark wine-inspired time slots
+- Sticky, accessible booking flows
+- Premium experience without sacrificing usability
+
+---
+
+## Outcomes & Impact
+Over two years, OTKit delivered measurable ROI:
+
+- **25% reduction in QA time**
+- **50% fewer Figma libraries**
+- **≈ $59K/year reclaimed** in developer time
+- Unified design language across 6 teams
+- Supported a full OpenTable brand refresh
+
+---
+
+## What Made This Work
+- Design ambassadors instead of enforcement
+- Documentation treated as a first-class artifact
+- Regular demos, office hours, and a system newsletter
+- Trust built through responsiveness and follow-through
+
+---
+
+## Reflection
+The success of OTKit wasn’t the components—it was the shift in mindset.  
+The system became something teams relied on, not something they worked around.
+
+That’s the difference between a library and a platform.
