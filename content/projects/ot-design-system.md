@@ -1,6 +1,7 @@
 ---
 title: "Building OTKit: From Drift to Discipline"
 slug: "ot-design-system"
+summary: This is a summary.
 company: "OpenTable"
 main_image: "/projects/images/casestudy-otkit.png"
 role: "Design Systems Lead"

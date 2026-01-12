@@ -1,18 +1,3 @@
-+++
-title = "Building OpenTable's Design System"
-date = 2023-01-01T08:30:00-07:00
-summary = "Brief description of your project"
-draft = true
-main_image = "/projects/images/casestudy-otkit.png"
-categories = ["casestudy"]  # optional
-tags = ["tag1", "tag2"]  # optional
-
-[params]
-  featured = true  # Show in featured section on homepage
-  weight = 5  # Order in featured section (lower = first)
-  showInPostList = false  # Show in timeline lists alongside blog posts
-
-+++
 
 # Crafting a Unified Product Identity
 

@@ -5,11 +5,11 @@ company: ""
 main_image: ""
 role: ""
 timeline: ""
-featured: true
+featured: false
 tags: []
 
 params:
-  featured: true
+  featured: false
   weight: 99
   showInPostList: false
 ---

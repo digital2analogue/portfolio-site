@@ -1,6 +1,7 @@
 ---
-title: "Designing a Scalable Decision-Engine UI"
-slug: "capital-one-decision-engine"
+title: "Designing a Scalable Decision-Engine UI at Capital One"
+slug: "c1-decision-engine"
+summary: This is a summary.
 company: "Capital One"
 main_image: "/projects/images/casestudy-capitalone.png"
 role: "Design Systems & Platform Strategy"

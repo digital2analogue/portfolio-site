@@ -1,6 +1,7 @@
 ---
-title: "Modernizing Restaurant Reservations"
-slug: "opentable-reservations"
+title: "Modernizing Restaurant Reservations at OpenTable"
+slug: "ot-reservations"
+summary: This is a summary.
 company: "OpenTable"
 main_image: "/projects/images/casestudy-otkit.png"
 role: "Design Systems Lead & Product Partner"
