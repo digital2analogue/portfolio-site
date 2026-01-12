@@ -1,20 +1,15 @@
 ---
-title: "Title"
+title: ""
 slug: ""
-company: "Company"
-main_image: "/projects/images/casestudy-capitalone.png"
-role: "TBD"
-timeline: "5 months"
+company: ""
+main_image: ""
+role: ""
+timeline: ""
 featured: true
-tags:
-  - enterprise UX
-  - design systems
-  - data tooling
-  - governance
-  - accessibility
+tags: []
 
 params:
-  featured:           # Show in featured section on homepage
-  weight:                # Third featured project
-  showInPostList: false   # Exclude from blog timeline
+  featured: true
+  weight: 99
+  showInPostList: false
 ---

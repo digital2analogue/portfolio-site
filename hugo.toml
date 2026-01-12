@@ -3,3 +3,23 @@ languageCode = 'en-us'
 title = 'River Romney'
 theme = 'yassi'
 
+[menu]
+  [[menu.main]]
+    name = "Home"
+    pageRef = "/"
+    weight = 10
+
+  [[menu.main]]
+    name = "Projects"
+    pageRef = "/projects"
+    weight = 20
+
+  [[menu.main]]
+    name = "Blog"
+    pageRef = "/posts"
+    weight = 30
+
+  [[menu.main]]
+    name = "About"
+    pageRef = "/about"
+    weight = 40
