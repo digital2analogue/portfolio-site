@@ -19,6 +19,7 @@ params:
   weight: 1               # Flagship project
   showInPostList: false   # Exclude from blog timeline
 ---
+![Design system drift across OpenTable products](/projects/images/cs-restaurant-app-lifestyle.jpg)
 
 
 ## Overview
@@ -40,6 +41,21 @@ We estimated the cost of drift at **~$237K/year** in inefficiency and rework.
 
 > Systems don’t fail because of missing components.  
 > They fail because teams stop trusting them.
+
+[Image placeholder]
+![Before OTKit - Multiple documentation sites, no source of truth](/projects/images/casestudy-otkit-sot-documentation.png)
+
+
+Before-state collage showing:
+
+Inconsistent colors
+
+Typography mismatch
+
+Fragmented components
+
+Or a slide that visually communicates “drift”
+[/Image placeholder]
 
 ---
 
@@ -72,6 +88,21 @@ This resolved cases where critical secondary actions appeared disabled and impro
 
 > Accessibility wasn’t a compliance checkbox—it was how we justified change.
 
+[Image placeholder]
+![Semantic color token architecture](/projects/images/otkit-color-tokens.png)
+
+Best image
+
+Token hierarchy diagram
+
+Semantic vs primitive token breakdown
+
+Color token mapping slide
+![Semantic color token migration tool](/projects/images/casestudy-otkit-colormappingtool.png)
+
+
+CAPTION: Establishing semantic tokens created a single source of truth across platforms and reduced downstream inconsistencies.
+
 ---
 
 ### Contextual typography
@@ -88,6 +119,25 @@ The existing type system was a one-size-fits-all scale that:
 **Impact**
 A/B testing showed a **+2.19% increase in diner bookings** on pages using dynamic type.
 
+[Image placeholder]
+![Contextual typography scales across platforms](/projects/images/casestudy-otkit-diner-ab-test.png) ![alt text](/projects/images/casestudy-otkit-dynamic-text.gif)
+Good image
+
+Before vs after typography scale
+
+Desktop vs mobile context
+
+Dynamic Type callout (even conceptual)
+
+Avoid
+
+Long paragraphs explaining typography
+
+Multiple similar images
+
+One strong comparison is enough.
+[/image placeholder]
+
 ---
 
 ### Icon system
@@ -97,6 +147,27 @@ A/B testing showed a **+2.19% increase in diner bookings** on pages using dynami
 - Added SF Symbol parity for accessibility
 
 This enabled a **searchable, themeable SVG system** for native and web teams.
+
+[Image placeholder]
+![Unified icon grid and keyshape system](/projects/images/otkit-icons.png)
+
+![alt text](/projects/images/casestudy-otkit-icon-grid.png) 
+![alt text](/projects/images/casestudy-otkit-icon-library.png) 
+![alt text](/projects/images/casestudy-otkit-icons-splash.png) 
+![alt text](/projects/images/casestudy-otkit-icons2.png)
+
+Purpose: Show craft without overdoing it
+
+Good image
+
+Icon grid with keyshape overlays
+
+SF Symbols parity comparison
+
+Consistency demonstration
+
+This image is optional, but valuable if it’s clean.
+[/image placeholder]
 
 ---
 
@@ -108,6 +179,20 @@ This enabled:
 - A refreshed color palette
 - Visual distinction for Iconic restaurants
 - Brand evolution without breaking product consistency
+
+[Image placeholder]
+![OTKit theming enables brand evolution across products](/projects/images/otkit-theming.png)
+
+Best image
+
+Light vs dark / mass vs iconic theme comparison
+
+Same layout, different theme
+
+Preferably cropped tightly
+
+This reinforces that OTKit enabled brand evolution, not just UI cleanup.
+[/image placeholder]
 
 ---
 
@@ -136,6 +221,22 @@ Over two years, OTKit delivered measurable ROI:
 - **≈ $59K/year reclaimed** in developer time
 - Unified design language across 6 teams
 - Supported a full OpenTable brand refresh
+
+[Image placeholder]
+![OTKit adoption across teams and platforms](/projects/images/otkit-scale.png)
+
+Purpose: End on scale, not pixels
+
+Good image
+
+System adoption slide
+
+Multi-product usage
+
+Platform coverage diagram
+
+This closes the loop: foundations → application → impact.
+[/image placeholder]
 
 ---
 
