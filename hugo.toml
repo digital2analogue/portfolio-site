@@ -23,3 +23,8 @@ theme = 'yassi'
     name = "About"
     pageRef = "/about"
     weight = 40
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

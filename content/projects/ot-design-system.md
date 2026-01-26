@@ -37,33 +37,20 @@ Research through user surveys and 1:1 interviews revealed:
 - Visual inconsistencies across products and platforms
 - Late-stage QA bugs tied directly to token and component mismatch
 
-We estimated the cost of drift at **~$237K/year** in inefficiency and rework.
+> We estimated the cost of drift at **~$237K/year** in inefficiency and rework.
 
-> Systems don’t fail because of missing components.  
-> They fail because teams stop trusting them.
-
-[Image placeholder]
-![Before OTKit - Multiple documentation sites, no source of truth](/projects/images/casestudy-otkit-sot-documentation.png)
-
-
-Before-state collage showing:
-
-Inconsistent colors
-
-Typography mismatch
-
-Fragmented components
-
-Or a slide that visually communicates “drift”
-[/Image placeholder]
+![Design system drift across OpenTable products](/projects/images/cs-legacy-sot.png)
+<p style="text-align: center; font-style: italic;">Design system drift across OpenTable products before consolidation.</p>
 
 ---
 
 ## Constraints
 - Six product and platform teams shipping in parallel
 - Legacy UI patterns deeply embedded in production
-- No mandate authority—adoption had to be earned
 - Cross-platform requirements (iOS, Android, Web)
+
+![Inconsistent, inaccessible components on web](/projects/images/cs-interface-opacity.png)
+<p style="text-align: center; font-style: italic;">Inconsistent and inaccessible components on web.</p>
 
 ---
 
@@ -71,37 +58,30 @@ Or a slide that visually communicates “drift”
 I focused on **foundations first**, then scaled upward:
 
 1. **Tokens before components**
-2. **Accessibility as a forcing function**
-3. **Governance through relationships, not rules**
-4. **Documentation as a product**
+2. **Color Contrast and Typescale Accessibility**
+4. **Documentation**
 
 ---
 
 ## Foundations: Tokens, Type, Icons
 
 ### Color tokens
-- Audited and documented all existing colors
-- Identified contrast and semantic inconsistencies
+- Audited and documented all existing colors cross-platform
+- Deprecated legacy redundant colors  
 - Rebuilt the color system around **accessible, semantic tokens**
+- Built "mixed" light/dark theming for existing UI
 
-This resolved cases where critical secondary actions appeared disabled and improved cross-platform parity.
+This resolved cases where critical actions appeared disabled, improved cross-platform parity, and made immediate implementation possible on existing UI.
 
-> Accessibility wasn’t a compliance checkbox—it was how we justified change.
-
-[Image placeholder]
-![Semantic color token architecture](/projects/images/otkit-color-tokens.png)
-
-Best image
-
-Token hierarchy diagram
+![Semantic color token architecture](/projects/images/reFdWnDzFk14EtF8.png)
 
 Semantic vs primitive token breakdown
 
+![Semantic color token documentation](/projects/images/cs-semantic-color-documentation.png)
+
 Color token mapping slide
 ![Semantic color token migration tool](/projects/images/casestudy-otkit-colormappingtool.png)
-
-
-CAPTION: Establishing semantic tokens created a single source of truth across platforms and reduced downstream inconsistencies.
+<p style="text-align: center; font-style: italic;">Establishing semantic tokens created a single source of truth across platforms and reduced downstream inconsistencies.</p>
 
 ---
 
@@ -111,6 +91,8 @@ The existing type system was a one-size-fits-all scale that:
 - Encouraged incorrect font usage in native apps
 - Had ballooned to **39 fonts in the codebase**
 
+![Contextual typography scales across platforms](/projects/images/casestudy-otkit-diner-ab-test.png)
+
 **Solution**
 - Introduced a contextual typography scale by platform
 - Defined size, weight, and family per context
@@ -119,24 +101,14 @@ The existing type system was a one-size-fits-all scale that:
 **Impact**
 A/B testing showed a **+2.19% increase in diner bookings** on pages using dynamic type.
 
-[Image placeholder]
-![Contextual typography scales across platforms](/projects/images/casestudy-otkit-diner-ab-test.png) ![alt text](/projects/images/casestudy-otkit-dynamic-text.gif)
-Good image
+![Screenshot animation of dynamic text sizing implemented on iOS](/projects/images/casestudy-otkit-dynamic-text.gif)
+<p style="text-align: center; font-style: italic;">Animation of dynamic text sizing implemented on iOS</p>
+
 
 Before vs after typography scale
 
 Desktop vs mobile context
 
-Dynamic Type callout (even conceptual)
-
-Avoid
-
-Long paragraphs explaining typography
-
-Multiple similar images
-
-One strong comparison is enough.
-[/image placeholder]
 
 ---
 
@@ -145,29 +117,12 @@ One strong comparison is enough.
 - Unified keyshapes for indicators
 - Centralized icon repositories across platforms
 - Added SF Symbol parity for accessibility
+![Animation of shape-based icon creation grid with keyshapes](/projects/images/icon_grid_animated.gif)
+![Screenshot of icon creation guidelines on documentation site](/projects/images/casestudy-otkit-icons-splash.png) 
 
-This enabled a **searchable, themeable SVG system** for native and web teams.
+<p class="summary">This enabled a **searchable, themeable SVG system** for native and web teams.</p>
 
-[Image placeholder]
-![Unified icon grid and keyshape system](/projects/images/otkit-icons.png)
-
-![alt text](/projects/images/casestudy-otkit-icon-grid.png) 
-![alt text](/projects/images/casestudy-otkit-icon-library.png) 
-![alt text](/projects/images/casestudy-otkit-icons-splash.png) 
-![alt text](/projects/images/casestudy-otkit-icons2.png)
-
-Purpose: Show craft without overdoing it
-
-Good image
-
-Icon grid with keyshape overlays
-
-SF Symbols parity comparison
-
-Consistency demonstration
-
-This image is optional, but valuable if it’s clean.
-[/image placeholder]
+![Screenshot of searchable icon library on documentation site](/projects/images/casestudy-otkit-icon-library.png) 
 
 ---
 
@@ -183,8 +138,6 @@ This enabled:
 [Image placeholder]
 ![OTKit theming enables brand evolution across products](/projects/images/otkit-theming.png)
 
-Best image
-
 Light vs dark / mass vs iconic theme comparison
 
 Same layout, different theme
@@ -192,7 +145,6 @@ Same layout, different theme
 Preferably cropped tightly
 
 This reinforces that OTKit enabled brand evolution, not just UI cleanup.
-[/image placeholder]
 
 ---
 
