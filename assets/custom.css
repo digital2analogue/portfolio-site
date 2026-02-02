@@ -1,8 +1,13 @@
-/* Custom CSS by River */
+/* Custom CSS template overrides */
+
+/* Only on the homepage if your body has a home-ish class; otherwise this applies everywhere */
+.center { max-width: none !important; }
+.cover-content { max-width: none !important; width: 100% !important; }
+main.site-main .content { max-width: none !important; }
+
+
 /* Underline links in main content - River's custom */
-.cover-intro {
- text-align: left;
-}
+
 .cover-intro a {
   color: var(--link-color);
   text-decoration: underline !important;
@@ -12,8 +17,6 @@
   color: var(--link-color);
   text-decoration: none !important;
 }
-
-/* Custom edits to template */
 
 p .summary {
   text-align: center;
