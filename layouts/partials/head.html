@@ -2,7 +2,7 @@
 <meta name="viewport" content="width=device-width">
 
 <!-- Adding custom.css -->
-{{ $custom := resources.Get "custom.css" | minify | fingerprint }}
+{{ $custom := resources.Get "css/custom.css" | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $custom.RelPermalink }}" integrity="{{ $custom.Data.Integrity }}">
 
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
