@@ -181,6 +181,7 @@
   {{ end }}
   {{ end }}
 
+  {{ if (site.Params.showBlogPosts | default false) }}
   <!-- Blog Posts List -->
   {{ $posts := where site.RegularPages "Section" "posts" }}
   {{ $projectsInList := where (where site.RegularPages "Section" "projects") "Params.showInPostList" true }}
@@ -219,6 +220,7 @@
           </div>
         </a>
       </li>
+      {{ end }}
       {{ end }}
 
       <!-- Timeline Starting Point (optional) -->
