@@ -1,5 +1,7 @@
 {{ define "main" }}
 
+<!-- USING PROJECT home.html OVERRIDE -->
+
 <div class="content">
   <div align="center">
     <div class="cover-content">
@@ -79,6 +81,7 @@
     </div>
   </div>
 
+  {{ if (site.Params.showFeaturedProjects | default false) }}
   <!-- Featured Projects Section -->
   {{ $projects := where site.RegularPages "Section" "projects" }}
   {{ $projects = where $projects "Params.featured" true }}
@@ -175,6 +178,7 @@
     </div>
     {{ end }}
   </section>
+  {{ end }}
   {{ end }}
 
   <!-- Blog Posts List -->
