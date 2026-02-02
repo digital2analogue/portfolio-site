@@ -1,0 +1,10 @@
+/* Underline links in main content - River's custom */
+.cover-intro a {
+  color: var(--link-color);
+  text-decoration: underline !important;
+}
+
+.cover-intro a:hover {
+  color: var(--link-color);
+  text-decoration: none !important;
+}
