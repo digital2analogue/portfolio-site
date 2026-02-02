@@ -25,10 +25,32 @@ theme = 'yassi'
     weight = 40
     
 [params]
-showFeaturedProjects = false
+# Homepage defaults 
+showFeaturedProjects = false 
 showBlogPosts = false
+
+# Pages & Projects Meta defaults by section
 showDatesProjects = false
+showReadingTimeProjects = false
+showCategoriesProjects = false
+showTagsProjects = false
+showSummaryProjects = false
+showHeroImageProjects = false
+
 showDatesPosts = true
+showReadingTimePosts = true
+showCategoriesPosts = true
+showTagsPosts = true
+showSummaryPosts = false
+showHeroImagePosts = false
+
+# Optional global fallbacks (used for other sections)
+showDates = true
+showReadingTime = true
+showCategories = true
+showTags = true
+showSummary = false
+showHeroImage = false
 
 [markup]
   [markup.goldmark]

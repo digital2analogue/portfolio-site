@@ -1,51 +1,87 @@
 {{ define "main" }}
 <!-- USING PROJECT single.html OVERRIDE -->
 
-{{/* STARTDate visibility logic */}}
-{{ $showDates := true }}
-{{ if eq .Section "projects" }}
-  {{ $showDates = site.Params.showDatesProjects | default false }}
-{{ else if eq .Section "posts" }}
-  {{ $showDates = site.Params.showDatesPosts | default true }}
-{{ else }}
-  {{ $showDates = site.Params.showDates | default true }}
-{{ end }}
-{{ with .Params.showDate }}{{ $showDates = . }}{{ end }}
+{{/* ---------- Display toggles ---------- */}}
+{{ $sec := .Section }}
 
+{{ $showDates := site.Params.showDates | default true }}
+{{ $showReadingTime := site.Params.showReadingTime | default true }}
+{{ $showCategories := site.Params.showCategories | default true }}
+{{ $showTags := site.Params.showTags | default true }}
+{{ $showSummary := site.Params.showSummary | default true }}
+{{ $showHeroImage := site.Params.showHeroImage | default true }}
+
+{{ if eq $sec "projects" }}
+  {{ $showDates = site.Params.showDatesProjects | default false }}
+  {{ $showReadingTime = site.Params.showReadingTimeProjects | default false }}
+  {{ $showCategories = site.Params.showCategoriesProjects | default false }}
+  {{ $showTags = site.Params.showTagsProjects | default false }}
+  {{ $showSummary = site.Params.showSummaryProjects | default true }}
+  {{ $showHeroImage = site.Params.showHeroImageProjects | default true }}
+{{ else if eq $sec "posts" }}
+  {{ $showDates = site.Params.showDatesPosts | default true }}
+  {{ $showReadingTime = site.Params.showReadingTimePosts | default true }}
+  {{ $showCategories = site.Params.showCategoriesPosts | default true }}
+  {{ $showTags = site.Params.showTagsPosts | default true }}
+  {{ $showSummary = site.Params.showSummaryPosts | default true }}
+  {{ $showHeroImage = site.Params.showHeroImagePosts | default true }}
+{{ end }}
+
+{{/* Per-page overrides (optional) */}}
+{{ with .Params.showDate }}{{ $showDates = . }}{{ end }}
+{{ with .Params.showReadingTime }}{{ $showReadingTime = . }}{{ end }}
+{{ with .Params.showCategories }}{{ $showCategories = . }}{{ end }}
+{{ with .Params.showTags }}{{ $showTags = . }}{{ end }}
+{{ with .Params.showSummary }}{{ $showSummary = . }}{{ end }}
+{{ with .Params.showHeroImage }}{{ $showHeroImage = . }}{{ end }}
+
+{{/* Date strings (always defined so template never breaks) */}}
 {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
 {{ $dateHuman := .Date | time.Format ":date_long" }}
 
 
-{{/* END Date visibility logic */}}
-
 <article class="post-article">
   <header class="post-header">
     <h1 class="post-title">{{ .Title }}</h1>
+
     <div class="post-meta">
-    {{ if $showDates }}
-    <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
-    <span class="post-meta-separator">•</span>
-    {{ end }}
-      <span>{{.ReadingTime}} min read</span>
-      {{ if .Params.categories }}
-      <span class="post-meta-separator">•</span>
-      {{ partial "terms.html" (dict "taxonomy" "categories" "page" .) }}
+      {{ $printed := false }}
+
+      {{ if $showDates }}
+        <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+        {{ $printed = true }}
       {{ end }}
-      {{ if .Params.tags }}
-      <span class="post-meta-separator">•</span>
-      {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+
+      {{ if and $showReadingTime (gt .ReadingTime 0) }}
+        {{ if $printed }}<span class="post-meta-separator">•</span>{{ end }}
+        <span>{{ .ReadingTime }} min read</span>
+        {{ $printed = true }}
+      {{ end }}
+
+      {{ if and $showCategories .Params.categories }}
+        {{ if $printed }}<span class="post-meta-separator">•</span>{{ end }}
+        {{ partial "terms.html" (dict "taxonomy" "categories" "page" .) }}
+        {{ $printed = true }}
+      {{ end }}
+
+      {{ if and $showTags .Params.tags }}
+        {{ if $printed }}<span class="post-meta-separator">•</span>{{ end }}
+        {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+        {{ $printed = true }}
       {{ end }}
     </div>
-    {{ if .Summary }}
-    <p class="post-summary">{{.Summary}}</p>
+
+    {{ if and $showSummary .Summary }}
+      <p class="post-summary">{{ .Summary }}</p>
+    {{ end }}
+
+    {{ if and $showHeroImage .Params.main_image }}
+      <div class="post-image">
+        <img src="{{ .Params.main_image }}" alt="{{ .Title }}">
+      </div>
     {{ end }}
   </header>
 
-  {{ if .Params.main_image }}
-  <div class="post-image">
-    <img src="{{ .Params.main_image }}" alt="{{ .Title }}">
-  </div>
-  {{ end }}
 
   <div class="post-content">
     {{ .Content }}
