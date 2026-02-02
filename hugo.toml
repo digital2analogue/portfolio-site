@@ -10,7 +10,7 @@ theme = 'yassi'
     weight = 10
 
   [[menu.main]]
-    name = "Projects"
+    name = "Work"
     pageRef = "/projects"
     weight = 20
 
