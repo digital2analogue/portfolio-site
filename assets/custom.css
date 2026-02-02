@@ -1,0 +1,21 @@
+/* Custom CSS by River */
+/* Underline links in main content - River's custom */
+.cover-intro {
+ text-align: left;
+}
+.cover-intro a {
+  color: var(--link-color);
+  text-decoration: underline !important;
+}
+
+.cover-intro a:hover {
+  color: var(--link-color);
+  text-decoration: none !important;
+}
+
+/* Custom edits to template */
+
+p .summary {
+  text-align: center;
+  font-style: italic;
+}
