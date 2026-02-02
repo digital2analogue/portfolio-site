@@ -27,6 +27,7 @@ theme = 'yassi'
 [params]
 showFeaturedProjects = false
 showBlogPosts = false
+showDates = false
 
 [markup]
   [markup.goldmark]
