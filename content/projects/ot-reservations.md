@@ -1,12 +1,12 @@
 ---
-title: "Modernizing Restaurant Reservations at OpenTable"
+title: "Modernizing Restaurant Reservations Without Losing Density"
 slug: "ot-reservations"
-summary: This is a summary.
+summary: Modernized OpenTable’s restaurant-facing reservation details flow by improving hierarchy and scannability while preserving information density—demonstrating how design systems can drive meaningful product improvements in high-stakes operational contexts.
 company: "OpenTable"
 main_image: "/projects/images/casestudy-otkit.png"
 role: "Design Systems Lead & Product Partner"
 timeline: "10 weeks"
-featured: true
+featured: false
 draft: false
 tags:
   - product design
@@ -15,8 +15,8 @@ tags:
   - platform consistency
 
 params:
-  featured: true          # Show in featured section on homepage
-  weight: 2               # Second featured project
+  featured: false          # Show in featured section on homepage
+  weight: 3               # Second featured project
   showInPostList: false   # Exclude from blog timeline
 ---
 
@@ -28,8 +28,7 @@ This project demonstrates how design systems can drive **practical product outco
 
 ---
 
-## Role & Scope
-**Role:** Design Systems Lead, Workshop Facilitator, QA Partner  
+**My role:** Design Systems Lead, Product Partner  
 **Scope:** UX strategy, system alignment, component modeling  
 **Team:** 3 designers, 6 engineers, 2 PMs  
 **Timeline:** 10 weeks
@@ -96,6 +95,13 @@ The result was faster iteration with fewer regressions.
 
 ## Outcomes & Impact
 - Modernized a core operational workflow without sacrificing density
-- Improved readability and hierarchy in a high-stakes interface
-- Reduced QA friction by replacing bespoke UI with shared patterns
-- Strengthened trust in the design system through visible product
+- Improved readability and hierarchy in a high-stakes, time-sensitive interface
+- Reduced QA friction by replacing bespoke UI with shared system patterns
+- Strengthened trust in OTKit through visible, high-traffic product adoption
+
+---
+
+## Reflection
+Designing for restaurant operators reinforced that usability isn’t about simplification—it’s about **clarity under pressure**.
+
+This work showed how design systems can enable meaningful product improvements without disrupting workflows that teams depend on daily.

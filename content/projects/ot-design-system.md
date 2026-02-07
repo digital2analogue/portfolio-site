@@ -1,7 +1,7 @@
 ---
 title: "Building OTKit: From Drift to Discipline"
 slug: "ot-design-system"
-summary: Led the transformation of OpenTable’s design system from fragmented libraries into an accessible, token-driven platform used across iOS, Android, and web.
+summary: Led the transformation of OpenTable’s design system from fragmented libraries into an accessible, token-driven platform used across iOS, Android, and web—reducing design drift, improving adoption, and enabling system-led product evolution.
 company: "OpenTable"
 main_image: "/projects/images/casestudy-otkit.png"
 role: "Design Systems Lead"
@@ -24,10 +24,6 @@ params:
 ![Lifestyle photo showing Diner and Restaurant OpenTable products before system consolidation](/projects/images/cs-restaurant-app-lifestyle.jpg)
 *Diner and Restaurant OpenTable product apps on iPad and iPhone*
 
-**My role:** Design Systems Lead  
-**Scope:** iOS, Android, Web  
-**Team:** 6 product teams
-
 
 ## Overview
 OTKit is OpenTable’s design system supporting Restaurant and Diner products across iOS, Android, and web. When I took ownership, the system existed—but lacked cohesion, governance, and trust. Design drift, fragmented sources of truth, and inconsistent adoption were slowing teams down and introducing costly QA issues.
@@ -35,6 +31,12 @@ OTKit is OpenTable’s design system supporting Restaurant and Diner products ac
 My mandate was not just to redesign components.
 
 It was to **turn a drifting system into an operational platform** teams actually relied on.
+
+---
+
+**My role:** Design Systems Lead  
+**Scope:** iOS, Android, Web  
+**Team:** 6 product teams
 
 ---
 

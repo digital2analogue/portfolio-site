@@ -1,12 +1,13 @@
 ---
-title: "Designing a Scalable Decision-Engine UI at Capital One"
+title: "Designing a Scalable Decision Engine for Enterprise Policy"
 slug: "c1-decision-engine"
-summary: This is a summary.
+summary: Designed a modular decision-engine interface at Capital One for defining complex policy logic in a compliance-sensitive environment—replacing spreadsheet-driven workflows with clearer, more accessible system patterns.
 company: "Capital One"
 main_image: "/projects/images/casestudy-capitalone.png"
 role: "Design Systems & Platform Strategy"
 timeline: "5 months"
-featured: true
+featured: false
+draft: false
 tags:
   - enterprise UX
   - design systems
@@ -15,8 +16,8 @@ tags:
   - accessibility
 
 params:
-  featured: true          # Show in featured section on homepage
-  weight: 3               # Third featured project
+  featured: false          # Show in featured section on homepage
+  weight: 2               # Third featured project
   showInPostList: false   # Exclude from blog timeline
 ---
 
@@ -29,9 +30,8 @@ At Capital One, I led design systems strategy for a scalable decision-engine int
 
 ---
 
-## Role & Scope
-**Role:** Design Systems Lead  
-**Scope:** System strategy, component architecture, adoption, governance  
+**My role:** Design Systems Lead  
+**Scope:** System strategy, component architecture, governance  
 **Team:** 2 designers, 2 PMs, engineering leads  
 **Timeline:** 5 months
 
@@ -77,8 +77,6 @@ We replaced spreadsheet-style interfaces with modular workflows that made logic 
 - Defined repeatable interaction patterns for common analyst tasks
 - Created a migration roadmap aligned to system maturity
 
-This enabled incremental adoption without disrupting existing workflows.
-
 ---
 
 ## Component Deep Dive: Rule Cell (Conceptual)
@@ -116,7 +114,7 @@ Accessibility became a forcing function for better structure and clarity.
 
 ---
 
-## What I’d Do Next
+## Next Iterations
 - Expand the component library to support new data interaction models
 - Refine token architecture for faster theming and dark mode support
 - Deepen async contribution rituals to scale governance sustainably
