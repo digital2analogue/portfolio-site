@@ -4,8 +4,8 @@ date = 2025-09-01
 draft = false
 summary = "In a world of flawless 4K and AI filters, I picked up a quirky 1.3MP PSP camera from 2006—and found freedom in its flaws."
 main_image = "/images/post-cover.jpg"  # optional
-tags = ["tag1", "tag2"]
-categories = ["category1"]
+tags = ["photography", "camera", "analog"]
+categories = ["creativeprocess"]
 +++
 
 
@@ -63,8 +63,6 @@ No hunting down rare FireWire cards, overpriced Apple cables, or clunky capture 
 With the PSP, everything saves directly to the Memory Stick Duo card, making file transfer as easy as dropping photos from a point-and-shoot.
 
 Sure, the quality won’t match FireWire capture from a proper camcorder—but the tradeoff is convenience, portability, and a look that’s all its own.
-
----hugo server
 
 📷 **In a world that worships technical perfection, sometimes the most meaningful art comes from leaning into limits.**  
 The PSP camera reminds me that imperfection isn’t something to be corrected—it’s something to be explored.
