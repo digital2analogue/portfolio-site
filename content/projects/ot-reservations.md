@@ -26,6 +26,8 @@ I led the redesign of OpenTable’s restaurant reservation details flow—a busi
 
 This project demonstrates how design systems can drive **practical product outcomes**, not just visual consistency.
 
+![Screenshot of final Reservation Details screen before and after](/foh-redesign-before-after.gif)*Reservation details redesign - before and after*
+
 ---
 
 **My role:** Design Systems Lead, Product Partner  
@@ -45,6 +47,8 @@ The experience was:
 - Costly to maintain due to distributed ownership across engineering teams
 
 Despite its importance, it had the **most legacy styling** in the product—making UX improvements slow and risky.
+
+![Screenshot of legacy Reservation Details page before redesign](/0kkrfA9yT5p4WDpP.png)*Legacy reservation details view. High density, low hierarchy, fragmented styling.*
 
 ---
 
@@ -66,6 +70,26 @@ Key principles:
 
 This allowed us to modernize the experience without disrupting established workflows.
 
+[Wireframe layout
+
+Modular breakdown diagram
+
+Annotated layout showing card segmentation]
+
+This reinforces:
+
+“We treated it as a modular system problem.”
+
+Visually show:
+
+Card boundaries
+
+Hierarchy zones
+
+System mapping
+
+If you have a slide that breaks the page into zones — this is where it belongs.
+
 ---
 
 ## Solution: Modular, Card-Based Architecture
@@ -77,6 +101,29 @@ We restructured the reservation details view into a modular, card-based layout t
 - Reduced one-off UI logic in engineering
 
 Each card mapped to a system pattern, allowing teams to iterate safely and predictably.
+
+
+![Screenshot of final Reservation Details screen after redesign and update](/guest-profile-boh.png)
+![Screenshot of final Reservation Details screen after redesign and update](/guest-profile-boh-detail.png)*The new Guest Profile component made guest data easily viewable in Back of House*
+
+
+[Here you want:
+
+Clean after screen
+
+Annotated version showing card groupings
+
+
+What this section needs:
+
+One full layout
+
+One zoomed-in card example
+
+Optional: mobile vs desktop side-by-side
+
+If you have responsive mocks, show them here. This is where “Design once, scale across platforms” becomes visible.
+]
 
 ---
 
@@ -90,6 +137,17 @@ We:
 - Tightened the feedback loop between system and product teams
 
 The result was faster iteration with fewer regressions.
+![Screenshot of OTKit documentation site showing how to implement inline theming for legacy screens](/foh-inline-theming.png)*Support for inline theming was implemented to support mixed legacy theming before full light/dark theme were prioritized*
+
+![Screenshot of OTKit color token references inside iOS app](/color-tokens-native.png)*OTKit color tokens*
+
+[Include:
+
+Token screenshot (color / spacing / typography)
+
+Component library snippet
+
+Before vs after override reduction (if you have it)]
 
 ---
 
@@ -98,6 +156,14 @@ The result was faster iteration with fewer regressions.
 - Improved readability and hierarchy in a high-stakes, time-sensitive interface
 - Reduced QA friction by replacing bespoke UI with shared system patterns
 - Strengthened trust in OTKit through visible, high-traffic product adoption
+
+[You can include:
+
+Small side-by-side before/after comparison
+
+Or a clean cropped “final state” with a strong caption
+
+No more than one image here.]
 
 ---
 

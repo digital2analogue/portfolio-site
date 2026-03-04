@@ -19,7 +19,6 @@ params:
   featured: false          # Show in featured section on homepage
   weight: 1               # Flagship project
   showInPostList: false   # Exclude from blog timeline
-  excludeFromProjectList: true  # Exclude from projects page
 ---
 
 ![Image Alt text](/projects/images/image.png)
