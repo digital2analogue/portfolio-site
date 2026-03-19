@@ -102,28 +102,12 @@ We restructured the reservation details view into a modular, card-based layout t
 
 Each card mapped to a system pattern, allowing teams to iterate safely and predictably.
 
+![Screenshot of final Reservation Details screen after redesign and update](/cs-foh-mobile-animation-og.gif)
+![Screenshot of final Reservation Details screen after redesign and update](/cs-foh-iOS-iPad-after.png)*The new Reservation and Guest Profile in Front of House Mobile iOS*
 
+### Modular ecosystem
 ![Screenshot of final Reservation Details screen after redesign and update](/guest-profile-boh.png)
 ![Screenshot of final Reservation Details screen after redesign and update](/guest-profile-boh-detail.png)*The new Guest Profile component made guest data easily viewable in Back of House*
-
-
-[Here you want:
-
-Clean after screen
-
-Annotated version showing card groupings
-
-
-What this section needs:
-
-One full layout
-
-One zoomed-in card example
-
-Optional: mobile vs desktop side-by-side
-
-If you have responsive mocks, show them here. This is where “Design once, scale across platforms” becomes visible.
-]
 
 ---
 
