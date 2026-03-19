@@ -1,0 +1,107 @@
+# PRD: Personal Brand Website
+
+## Overview
+
+A modular, fast, and minimal personal brand website built with Hugo and the Yassi theme, deployed to static hosting (Netlify). The primary purpose is to showcase product design and design systems case studies, with room to expand into photography and writing.
+
+---
+
+## Goals
+
+- Publish a polished portfolio of case studies (product design + design systems)
+- Establish a cohesive personal brand across portfolio, Substack, and social
+- Maintain a fast, minimal, and maintainable architecture
+
+---
+
+## Tech Stack
+
+| Layer | Choice |
+|---|---|
+| Framework | Hugo |
+| Theme | Yassi |
+| Content | Markdown + front matter |
+| Deployment | Netlify (static hosting) |
+
+---
+
+## Content Model
+
+Each case study is a Markdown file under `/content/projects/` with the following front matter:
+
+```yaml
+title: string
+slug: string
+summary: string           # used in page header
+card_summary: string      # used in project cards (to be implemented)
+company: string
+main_image: string
+role: string
+timeline: string
+featured: boolean
+draft: boolean
+tags: [string]
+params:
+  featured: boolean
+  weight: number          # controls ordering
+```
+
+Case study body sections: **Background → Problem → Approach → Solution → Impact**
+
+---
+
+## Known Problems
+
+| ID | Problem | Required Solution |
+|---|---|---|
+| `summary_conflict` | Single summary field used for both cards and page headers | Add `card_summary` field; override list template |
+| `image_pipeline` | No consistent image storage, naming, or referencing system | Define folder structure, naming convention, and referencing pattern |
+| `theme_limitations` | Yassi is opinionated; limited layout control | Override layouts and partials in Hugo |
+| `hugo_fragility` | Small structural errors break rendering | Enforce strict file/folder conventions |
+
+---
+
+## Remaining Work
+
+### High Priority
+1. **Dual-summary system** — Add `card_summary` to front matter; override list template to use it
+2. **Image pipeline** — Settle on page bundles or static path; define naming convention and export workflow
+3. **Complete case studies** — OpenTable Reservations, OTKit Design System
+
+### Medium Priority
+4. **Theme overrides** — Customize list and single templates for portfolio use
+5. **Homepage refinement** — Validate featured ordering, improve visual hierarchy
+
+### Future
+- Expand to multi-site structure (`.design`, `.photo`, `.blog`)
+- Align portfolio with Substack and social content distribution
+
+---
+
+## Conventions
+
+- **Images:** TBD — page bundles preferred; naming format `[project-slug]-[descriptor].[ext]`
+- **Export:** PNG, 2x resolution from design tools
+- **Drafts:** Set `draft: true` until ready to publish
+- **Ordering:** Use `params.weight` (lower = higher priority)
+
+---
+
+## Current Status
+
+| Area | Status |
+|---|---|
+| Site build | ✅ Functional |
+| Homepage | ✅ Working |
+| Case studies | 🟡 Partial |
+| Image system | 🔴 Unstable |
+| Theme overrides | 🔴 Not started |
+
+---
+
+## Recommended Next Steps
+
+1. Fix summary system (`summary_conflict`)
+2. Stabilize image pipeline (`image_pipeline`)
+3. Implement theme overrides (`theme_limitations`)
+4. Resume case study development
