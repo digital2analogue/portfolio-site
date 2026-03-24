@@ -4,7 +4,7 @@ slug: "ot-reservations"
 summary: Modernized OpenTable’s restaurant-facing reservation workflow by improving hierarchy and scannability while preserving information density—demonstrating how design systems can drive real product improvements in high-stakes operational contexts.
 card_summary: Improved the restaurant reservation workflow—better hierarchy and scannability without sacrificing the information density power users depend on.
 company: "OpenTable"
-main_image: "/projects/images/casestudy-otkit.png"
+main_image: "/projects/images/ot-reservations-before-after.gif"
 role: "Design Systems Lead & Product Partner"
 timeline: "10 weeks"
 featured: false
@@ -27,7 +27,7 @@ I led the redesign of OpenTable’s restaurant reservation details flow—a busi
 
 This project demonstrates how design systems can drive **practical product outcomes**, not just visual consistency.
 
-![Screenshot of final Reservation Details screen before and after](/foh-redesign-before-after.gif)*Reservation details redesign - before and after*
+![Screenshot of final Reservation Details screen before and after](/projects/images/ot-reservations-before-after.gif)*Reservation details redesign - before and after*
 
 ---
 
@@ -49,7 +49,7 @@ The experience was:
 
 Despite its importance, it had the **most legacy styling** in the product—making UX improvements slow and risky.
 
-![Screenshot of legacy Reservation Details page before redesign](/0kkrfA9yT5p4WDpP.png)*Legacy reservation details view. High density, low hierarchy, fragmented styling.*
+![Screenshot of legacy Reservation Details page before redesign](/projects/images/ot-reservations-legacy-detail.png)*Legacy reservation details view. High density, low hierarchy, fragmented styling.*
 
 ---
 
@@ -103,12 +103,12 @@ We restructured the reservation details view into a modular, card-based layout t
 
 Each card mapped to a system pattern, allowing teams to iterate safely and predictably.
 
-![Screenshot of final Reservation Details screen after redesign and update](/cs-foh-mobile-animation-og.gif)
-![Screenshot of final Reservation Details screen after redesign and update](/cs-foh-iOS-iPad-after.png)*The new Reservation and Guest Profile in Front of House Mobile iOS*
+![Screenshot of final Reservation Details screen after redesign and update](/projects/images/ot-reservations-mobile-animation.gif)
+![Screenshot of final Reservation Details screen after redesign and update](/projects/images/ot-reservations-ios-ipad-after.png)*The new Reservation and Guest Profile in Front of House Mobile iOS*
 
 ### Modular ecosystem
-![Screenshot of final Reservation Details screen after redesign and update](/guest-profile-boh.png)
-![Screenshot of final Reservation Details screen after redesign and update](/guest-profile-boh-detail.png)*The new Guest Profile component made guest data easily viewable in Back of House*
+![Screenshot of final Reservation Details screen after redesign and update](/projects/images/ot-reservations-guest-profile-boh.png)
+![Screenshot of final Reservation Details screen after redesign and update](/projects/images/ot-reservations-guest-profile-boh-detail.png)*The new Guest Profile component made guest data easily viewable in Back of House*
 
 ---
 
@@ -122,9 +122,9 @@ We:
 - Tightened the feedback loop between system and product teams
 
 The result was faster iteration with fewer regressions.
-![Screenshot of OTKit documentation site showing how to implement inline theming for legacy screens](/foh-inline-theming.png)*Support for inline theming was implemented to support mixed legacy theming before full light/dark theme were prioritized*
+![Screenshot of OTKit documentation site showing how to implement inline theming for legacy screens](/projects/images/ot-reservations-inline-theming.png)*Support for inline theming was implemented to support mixed legacy theming before full light/dark theme were prioritized*
 
-![Screenshot of OTKit color token references inside iOS app](/color-tokens-native.png)*OTKit color tokens*
+![Screenshot of OTKit color token references inside iOS app](/projects/images/ot-reservations-color-tokens-native.png)*OTKit color tokens*
 
 [Include:
 

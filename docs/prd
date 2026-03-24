@@ -80,8 +80,8 @@ Case study body sections: **Background → Problem → Approach → Solution →
 
 ## Conventions
 
-- **Images:** TBD — page bundles preferred; naming format `[project-slug]-[descriptor].[ext]`
-- **Export:** PNG, 2x resolution from design tools
+- **Images:** All project images live in `/static/projects/images/`. Naming format: `[project-slug]-[descriptor].[ext]` (e.g. `ot-reservations-before-after.gif`). Reference in content as `/projects/images/filename.ext`
+- **Export:** PNG at 2x resolution from design tools; GIF for animations
 - **Drafts:** Set `draft: true` until ready to publish
 - **Ordering:** Use `params.weight` (lower = higher priority)
 
@@ -94,7 +94,7 @@ Case study body sections: **Background → Problem → Approach → Solution →
 | Site build | ✅ Functional |
 | Homepage | ✅ Working |
 | Case studies | 🟡 Partial |
-| Image system | 🔴 Unstable |
+| Image system | 🟡 Stable convention, old files need cleanup |
 | Theme overrides | 🔴 Not started |
 
 ---

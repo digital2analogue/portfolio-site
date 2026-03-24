@@ -87,7 +87,7 @@ These foundational changes unlocked consistency without forcing large rewrites, 
 
 This resolved cases where critical actions appeared disabled, improved cross-platform parity, and allowed teams to adopt the system without rewriting existing UI.
 
-![Semantic color token architecture](/projects/images/reFdWnDzFk14EtF8.png)
+![Semantic color token architecture](/projects/images/ot-design-system-semantic-color-tokens.png)
 *Semantic vs primitive token breakdown, and color token mapping slide.*
 
 ![Screenshot of semantic color token documentation](/projects/images/cs-semantic-color-documentation.png)
