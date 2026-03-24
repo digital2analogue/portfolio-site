@@ -116,9 +116,8 @@ A/B testing showed a **+2.19% increase in diner bookings** on pages using dynami
 ![Animated gif of dynamic text sizing from small to large on iOS iPhone based on user accessibility settings](/projects/images/casestudy-otkit-dynamic-text.gif)
 *Animation of dynamic text sizing implemented on iOS*
 
-[Image placeholder notes]
-Before vs after typography scale
-Desktop vs mobile context
+![Contextual typography scale showing size, weight, and family defined per platform context](/projects/images/casestudy-otkit-typescale.png)
+*The contextual type scale reduced 39 font variants to a purposeful, platform-aware system.*
 
 ---
 
@@ -127,12 +126,16 @@ Desktop vs mobile context
 - Unified keyshapes for indicators
 - Centralized icon repositories across platforms
 - Added SF Symbol parity for accessibility
+
 ![Animation of shape-based icon creation grid with keyshapes](/projects/images/icon_grid_animated.gif)
-![Screenshot of icon creation guidelines on documentation site](/projects/images/casestudy-otkit-icons-splash.png) 
+![Screenshot of icon creation guidelines on documentation site](/projects/images/casestudy-otkit-icons-splash.png)
 
 This enabled a **searchable, themeable SVG system** shared across native and web teams, reducing duplication and improving accessibility parity.
 
-![Screenshot of searchable icon library on documentation site](/projects/images/casestudy-otkit-icon-library.png) 
+![Screenshot of searchable icon library on documentation site](/projects/images/casestudy-otkit-icon-library.png)
+
+![Screenshot showing SF Symbol parity mapping across OTKit iconography](/projects/images/casestudy-otkit-sf-symbols-icons.png)
+*SF Symbol parity ensured accessibility-compliant icon behavior on iOS without duplicating icon work.*
 
 ---
 
@@ -146,28 +149,18 @@ This allowed brand evolution without breaking product consistency. Namely:
 - A refreshed color palette
 - Visual distinction for Iconic restaurants
 
-[Image placeholder notes]
-Light vs dark / mass vs iconic theme comparison
-Same layout, different theme
-Preferably cropped tightly
-This reinforces that OTKit enabled brand evolution, not just UI cleanup.
+The key insight: by encoding brand decisions as token values rather than hardcoded styles, the system could absorb a major brand shift without requiring teams to rewrite their components.
 
 ---
 
 ## Theming in Practice
-We delivered multiple system-driven themes:
+The tokenized architecture made it possible to deliver two visually distinct experiences from a single component library.
 
 ### Mass Theme
-- Editorial-style layout
-- Two-column structure inspired by e-commerce
-- Booking surfaced immediately
-- Minimal concepts guiding all components
+The Mass theme serves OpenTable's core restaurant audience. Editorial in feel, it uses a two-column structure inspired by e-commerce—booking surfaced immediately, decisions guided with minimal visual noise. Every component follows the same token-driven pattern, so new features land consistently without bespoke design decisions at the component level.
 
 ### Iconic Theme
-- Full-bleed imagery
-- Dark wine-inspired time slots
-- Sticky, accessible booking flows
-- Premium experience without sacrificing usability
+For OpenTable's premium Iconic restaurant tier, the system delivered a distinct but coherent experience. Full-bleed photography, dark wine-inspired time slot styling, and sticky booking flows communicated prestige without sacrificing usability. The same underlying tokens and components powered both themes—no fork required, just a different set of token values.
 
 ---
 
@@ -180,21 +173,22 @@ Over the course of the engagement, OTKit delivered measurable ROI:
 - Supported a full OpenTable brand refresh
 
 ![OTKit adoption across teams and platforms](/projects/images/otkit-scale.png)
-
-[Image placeholder]
-Purpose: End on scale, not pixels
-Good image
-System adoption slide
-Multi-product usage
-Platform coverage diagram
+*OTKit scaled across 6 product teams, supporting iOS, Android, and web simultaneously.*
 
 ---
 
 ## What Made This Work
-- Design ambassadors instead of enforcement
-- Documentation treated as a first-class artifact
-- Regular demos, office hours, and a system newsletter
-- Trust built through responsiveness and follow-through
+OTKit's adoption didn't happen through enforcement. We built a network of **design ambassadors**—designers embedded in product teams who championed the system locally and surfaced friction back to the core team. This created a feedback loop that made the system more useful over time.
+
+![Photo from OTKit design ambassadorship program](/projects/images/casestudy-otkit-ambassadorship.png)
+*Design ambassadors in product teams acted as system advocates and real-world feedback channels.*
+
+Documentation was treated as a **first-class deliverable**, not an afterthought. Component specs, token definitions, and usage guidelines were kept in sync with engineering. We ran regular office hours, live demos, and shipped a system newsletter to keep teams informed and engaged.
+
+![Screenshot of the OTKit system newsletter](/projects/images/casestudy-otkit-newsletter.png)
+*The OTKit newsletter kept teams aligned on system changes, deprecations, and new patterns.*
+
+Trust was built through follow-through. When teams reported issues, we responded quickly. When we made breaking changes, we migrated them. That responsiveness turned skeptics into advocates.
 
 ---
 
