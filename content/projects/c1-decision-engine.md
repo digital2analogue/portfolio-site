@@ -2,6 +2,7 @@
 title: "Designing a Scalable Decision Engine for Enterprise Policy"
 slug: "c1-decision-engine"
 summary: Designed a modular decision-engine interface at Capital One for defining complex policy logic in a compliance-sensitive environment—replacing spreadsheet-driven workflows with clearer, more accessible system patterns.
+card_summary: Replaced Capital One's spreadsheet workflows with a modular, compliance-ready decision engine
 company: "Capital One"
 main_image: "/projects/images/casestudy-capitalone.png"
 role: "Design Systems & Platform Strategy"

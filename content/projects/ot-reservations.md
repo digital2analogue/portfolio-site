@@ -2,6 +2,7 @@
 title: "Modernizing Restaurant Reservations Without Losing Density"
 slug: "ot-reservations"
 summary: Modernized OpenTable’s restaurant-facing reservation workflow by improving hierarchy and scannability while preserving information density—demonstrating how design systems can drive real product improvements in high-stakes operational contexts.
+card_summary: Improved the restaurant reservation workflow—better hierarchy and scannability without sacrificing the information density power users depend on.
 company: "OpenTable"
 main_image: "/projects/images/casestudy-otkit.png"
 role: "Design Systems Lead & Product Partner"

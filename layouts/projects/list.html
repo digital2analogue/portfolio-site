@@ -1,0 +1,46 @@
+{{ define "main" }}
+<div class="content">
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+
+  <!-- Projects Grid Layout -->
+  <div class="featured-grid">
+    {{ range sort .Pages "Params.weight" }}
+    <article class="featured-card">
+      {{ $projectUrl := .RelPermalink }}
+      {{ $isExternal := false }}
+      {{ if .Params.project_url }}
+      {{ $projectUrl = .Params.project_url }}
+      {{ $isExternal = true }}
+      {{ end }}
+      <a href="{{ $projectUrl }}" {{ if $isExternal }}target="_blank" rel="noopener noreferrer" {{ end }}>
+        {{ if .Params.main_image }}
+        <div class="featured-image" style="background-image: url('{{ .Params.main_image }}');">
+          <div class="featured-overlay">
+            <h3 class="featured-card-title">
+              {{ .Title }}
+              {{ if $isExternal }}<span class="external-link-icon">↗</span>{{ end }}
+            </h3>
+          </div>
+        </div>
+        {{ else }}
+        <div class="featured-image featured-no-image">
+          <div class="featured-overlay">
+            <h3 class="featured-card-title">
+              {{ .Title }}
+              {{ if $isExternal }}<span class="external-link-icon">↗</span>{{ end }}
+            </h3>
+          </div>
+        </div>
+        {{ end }}
+        {{ $cardSummary := .Params.card_summary | default .Params.summary }}
+        {{ if $cardSummary }}
+        <p class="featured-summary">{{ $cardSummary }}</p>
+        {{ end }}
+      </a>
+    </article>
+    {{ end }}
+  </div>
+
+</div>
+{{ end }}

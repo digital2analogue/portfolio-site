@@ -2,6 +2,7 @@
 title: "Building OTKit: From Drift to Discipline"
 slug: "ot-design-system"
 summary: Led the transformation of OpenTable’s design system into an accessible, token-driven platform used across iOS, Android, and web—reducing design drift, improving adoption, and enabling system-led product evolution at scale.
+card_summary: Rebuilt OpenTable’s design system into a token-driven platform across iOS, Android, and web—reducing drift and enabling consistent product evolution at scale.
 company: "OpenTable"
 main_image: "/projects/images/casestudy-otkit.png"
 role: "Design Systems Lead"
