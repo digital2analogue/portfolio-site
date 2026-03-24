@@ -80,7 +80,9 @@ Case study body sections: **Background → Problem → Approach → Solution →
 
 ## Conventions
 
-- **Images:** All project images live in `/static/projects/images/`. Naming format: `[project-slug]-[descriptor].[ext]` (e.g. `ot-reservations-before-after.gif`). Reference in content as `/projects/images/filename.ext`
+- **Project images:** `/static/projects/images/` → reference as `/projects/images/filename.ext`
+- **Post images:** `/static/posts/images/` → reference as `/posts/images/filename.ext`
+- **Naming format:** `[slug]-[descriptor].[ext]` (e.g. `ot-reservations-before-after.gif`, `262701-tiktok-convenience-dependency.jpg`)
 - **Export:** PNG at 2x resolution from design tools; GIF for animations
 - **Drafts:** Set `draft: true` until ready to publish
 - **Ordering:** Use `params.weight` (lower = higher priority)
