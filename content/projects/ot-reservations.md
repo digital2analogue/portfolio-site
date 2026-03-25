@@ -88,8 +88,7 @@ Each card mapped to a system pattern, allowing teams to iterate safely and predi
 
 ![Screenshot of the redesigned Reservation Details and Guest Profile in Front of House Mobile on iOS and iPad](/projects/images/ot-reservations-ios-ipad-after.png)*The new Reservation and Guest Profile in Front of House Mobile iOS*
 
-![Animation of the updated iOS Restaurant app showing modular layout and design system components](/projects/images/ot-reservations-ios-modular-layout.gif)
-*The modular card architecture in action — each zone behaves predictably and scales responsively across screen sizes.*
+![Animation of the updated iOS Restaurant app showing modular layout and design system components](/projects/images/ot-reservations-ios-modular-layout.gif)*The modular card architecture in action — each zone behaves predictably and scales responsively across screen sizes.*
 
 ### Modular ecosystem
 ![Screenshot of the redesigned Guest Profile component in the Back of House web view](/projects/images/ot-reservations-guest-profile-boh.png)
