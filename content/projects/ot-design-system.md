@@ -142,7 +142,7 @@ This enabled a **searchable, themeable SVG system** shared across native and web
 ## Brand Evolution: “Black Is the New Red”
 OpenTable operates in an industry dominated by red and orange. Partnering closely with Brand, we translated a premium direction into a **tokenized theming architecture** rather than one-off visual treatments.
 
-![Animation showing OpenTable's new brand applied across the app](/projects/images/casestudy-otkit-opentable-new-brand-app.gif)
+![Animation showing updated OTKit brand and theme on iPhone app](/projects/images/casestudy-otkit-opentable-new-brand-app.gif)
 
 ![Animation showing updated OTKit iconography shared by Debby on LinkedIn](/projects/images/casestudy-otkit-opentable-icons-debby-linkedin.gif)
 
