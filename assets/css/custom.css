@@ -40,7 +40,7 @@ p .summary {
 .post-content p > img + em {
   display: block;
   text-align: center;
-  font-size: 0.875rem;
+  font-size: 0.95rem;
   color: var(--text-secondary);
   margin-top: -1em;
 }
