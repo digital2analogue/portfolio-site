@@ -30,3 +30,17 @@ p .summary {
   text-align: center;
   font-style: italic;
 }
+
+/* Make images block-level so captions render on their own line */
+.post-content p > img {
+  display: block;
+}
+
+/* Style image captions (em immediately following an img) */
+.post-content p > img + em {
+  display: block;
+  text-align: center;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin-top: -1em;
+}
