@@ -86,7 +86,6 @@ We restructured the reservation details view into a modular, card-based layout t
 
 Each card mapped to a system pattern, allowing teams to iterate safely and predictably.
 
-![Animation of the redesigned reservation details flow on mobile](/projects/images/ot-reservations-mobile-animation.gif)
 ![Screenshot of the redesigned Reservation Details and Guest Profile in Front of House Mobile on iOS and iPad](/projects/images/ot-reservations-ios-ipad-after.png)*The new Reservation and Guest Profile in Front of House Mobile iOS*
 
 ![Animation of the updated iOS Restaurant app showing modular layout and design system components](/projects/images/ot-reservations-ios-modular-layout.gif)
