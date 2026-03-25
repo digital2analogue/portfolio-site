@@ -84,14 +84,15 @@ Case study body sections: **Background → Problem → Approach → Solution →
 All images should be abstract/conceptual — no real product data. Export PNG at 2x. Save to `/static/projects/images/` using `c1-decision-engine-[descriptor].png`.
 
 **Product structure for reference:**
-- **Onboarding wizard** (setup): Step 1 (outcome type) → Step 2 (name + description) → Step 3 (pick data elements via split panel)
-- **Main interface** (core product): Rules data table — each row is a policy rule: Rule Name | If this (data element badge) | Operator | Amount | Outcome. Toolbar has Bulk actions, Test model, and Add rule.
+- **Onboarding wizard** (3-step setup): Step 1 — outcome type radio group (Decline, Assign Credit Limit, Require Action, Award Rewards, Accumulate Rewards, Assign Minimum Credit Limit) → Step 2 — model name + description → Step 3 — pick data elements via searchable split panel
+- **Main interface** (core product): Rules data table. Columns: checkbox | drag handle (6-dot grip) | row # | Rule name | Data attribute (color-coded badge + pencil edit icon) | Operator (dropdown: >, ≥, <, ≤, =) | Amount (number input) | Outcome (color-coded badge + chevron) | overflow menu (⋮). Toolbar: Bulk actions | Test model | + Add rule. **Ruleset tabs at bottom** — a Decision Model contains multiple Rulesets, each tab is one Ruleset (each ruleset shares a single outcome type). Users add rulesets with the + button at the bottom left.
+- **Badge color coding:** "Income" = green badge, "Expense" = red/orange badge; "Approve" = green badge, "Deny" = red badge
 
 ---
 
-- [ ] **Hero image** (`c1-decision-engine-hero.png`) — The main rules data table with 3–4 rows populated. Show the full toolbar (Bulk actions, Test model, Add rule) and the column headers (Rule Name, If this, Operator, Amount, Outcome). Use placeholder rule names and abstract data element badges. This is the core product.
+- [ ] **Hero image** (`c1-decision-engine-hero.png`) — The main rules data table with 4–5 rows populated. Show the full toolbar (Bulk actions, Test model, + Add rule) and all column headers (Rule name, Data attribute, Operator, Amount, Outcome). Include the Ruleset tabs at the bottom (Ruleset 1, Ruleset 2, Ruleset 3). Use a mix of green/red badges to show the color-coding. This is the core product — make it feel like a real working tool.
 
-- [ ] **Rule row anatomy** (`c1-decision-engine-rule-row-anatomy.png`) — A single rule row, zoomed and annotated with callout labels: drag handle, rule name input, data element badge ("If this"), operator selector, amount field, outcome column. This is the "rule cell" described in the case study — most important image.
+- [ ] **Rule row anatomy** (`c1-decision-engine-rule-row-anatomy.png`) — A single rule row, zoomed in and annotated with callout labels pointing to: drag handle, row number, rule name input, data attribute badge (with edit icon), operator dropdown, amount field, outcome badge. This is the most important image for explaining the "rule cell" concept in the case study.
 
 - [ ] **Onboarding flow** (`c1-decision-engine-onboarding-flow.png`) — All three wizard steps shown in sequence (stacked or side-by-side): Step 1 outcome radio group, Step 2 name/description form, Step 3 data element split panel. Shows the structured setup progression before reaching the main interface.
 
