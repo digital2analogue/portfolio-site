@@ -83,11 +83,15 @@ Case study body sections: **Background → Problem → Approach → Solution →
 
 All images should be abstract/conceptual — no real product data. Export PNG at 2x. Save to `/static/projects/images/` using `c1-decision-engine-[descriptor].png`.
 
-- [ ] **Hero image** (`c1-decision-engine-hero.png`) — Abstract UI shell suggesting a complex enterprise policy tool. Dark or neutral toned, with placeholder rule rows and a component-style layout.
-- [ ] **Problem: before state** (`c1-decision-engine-before.png`) — Diagram showing fragmentation: multiple disconnected spreadsheet grids or document icons with arrows going everywhere. Intentionally chaotic.
-- [ ] **System hierarchy diagram** (`c1-decision-engine-system-hierarchy.png`) — Three-tier layered diagram: Tokens → Core Components → Reusable Patterns. Clean and simple.
-- [ ] **Rule Cell anatomy** (`c1-decision-engine-rule-cell.png`) — Annotated component diagram of a single rule cell. Labels like "Upstream dependency," "Validation state," "Logic input." Most important image in the study.
-- [ ] **Before/after modular workflow** (`c1-decision-engine-before-after.png`) — Two-column split: left shows spreadsheet chaos, right shows clean modular card workflow.
+- [ ] **Hero image** (`c1-decision-engine-hero.png`) — The Step 3 data element selector screen. Shows the two-column split panel: searchable list on the left (a few data elements checked), metadata preview on the right. Progress bar visible at top. Most visually interesting screen in the flow.
+
+- [ ] **Problem: before state** (`c1-decision-engine-before.png`) — A simple diagram contrasting the old way vs the new. Left side: multiple disconnected spreadsheet grids with messy arrows representing analyst workflows. Right side: the clean 3-step wizard with progress bar. Keep it diagrammatic rather than literal.
+
+- [ ] **Step flow overview** (`c1-decision-engine-step-flow.png`) — All three steps shown in sequence, stacked or side-by-side: Step 1 (outcome radio group), Step 2 (name/description form), Step 3 (data element selector). Illustrates the structured onboarding progression.
+
+- [ ] **Data element panel anatomy** (`c1-decision-engine-data-element-anatomy.png`) — A zoomed, annotated view of the Step 3 split panel. Callout labels pointing to: search filter, data element list, selection/checked state, preview panel, metadata fields (description, datatype, attribute path, valid values). This is the core interaction pattern — most important image.
+
+- [ ] **Outcome selection detail** (`c1-decision-engine-outcome-selection.png`) — A close crop of the Step 1 radio group showing 2–3 outcome options (e.g. Decline, Assign Credit Limit, Require Action) with one selected (highlighted in blue). Clean, shows the structured decision taxonomy.
 
 ---
 
