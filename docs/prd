@@ -83,15 +83,21 @@ Case study body sections: **Background → Problem → Approach → Solution →
 
 All images should be abstract/conceptual — no real product data. Export PNG at 2x. Save to `/static/projects/images/` using `c1-decision-engine-[descriptor].png`.
 
-- [ ] **Hero image** (`c1-decision-engine-hero.png`) — The Step 3 data element selector screen. Shows the two-column split panel: searchable list on the left (a few data elements checked), metadata preview on the right. Progress bar visible at top. Most visually interesting screen in the flow.
+**Product structure for reference:**
+- **Onboarding wizard** (setup): Step 1 (outcome type) → Step 2 (name + description) → Step 3 (pick data elements via split panel)
+- **Main interface** (core product): Rules data table — each row is a policy rule: Rule Name | If this (data element badge) | Operator | Amount | Outcome. Toolbar has Bulk actions, Test model, and Add rule.
 
-- [ ] **Problem: before state** (`c1-decision-engine-before.png`) — A simple diagram contrasting the old way vs the new. Left side: multiple disconnected spreadsheet grids with messy arrows representing analyst workflows. Right side: the clean 3-step wizard with progress bar. Keep it diagrammatic rather than literal.
+---
 
-- [ ] **Step flow overview** (`c1-decision-engine-step-flow.png`) — All three steps shown in sequence, stacked or side-by-side: Step 1 (outcome radio group), Step 2 (name/description form), Step 3 (data element selector). Illustrates the structured onboarding progression.
+- [ ] **Hero image** (`c1-decision-engine-hero.png`) — The main rules data table with 3–4 rows populated. Show the full toolbar (Bulk actions, Test model, Add rule) and the column headers (Rule Name, If this, Operator, Amount, Outcome). Use placeholder rule names and abstract data element badges. This is the core product.
 
-- [ ] **Data element panel anatomy** (`c1-decision-engine-data-element-anatomy.png`) — A zoomed, annotated view of the Step 3 split panel. Callout labels pointing to: search filter, data element list, selection/checked state, preview panel, metadata fields (description, datatype, attribute path, valid values). This is the core interaction pattern — most important image.
+- [ ] **Rule row anatomy** (`c1-decision-engine-rule-row-anatomy.png`) — A single rule row, zoomed and annotated with callout labels: drag handle, rule name input, data element badge ("If this"), operator selector, amount field, outcome column. This is the "rule cell" described in the case study — most important image.
 
-- [ ] **Outcome selection detail** (`c1-decision-engine-outcome-selection.png`) — A close crop of the Step 1 radio group showing 2–3 outcome options (e.g. Decline, Assign Credit Limit, Require Action) with one selected (highlighted in blue). Clean, shows the structured decision taxonomy.
+- [ ] **Onboarding flow** (`c1-decision-engine-onboarding-flow.png`) — All three wizard steps shown in sequence (stacked or side-by-side): Step 1 outcome radio group, Step 2 name/description form, Step 3 data element split panel. Shows the structured setup progression before reaching the main interface.
+
+- [ ] **Data element selector detail** (`c1-decision-engine-data-element-selector.png`) — Zoomed view of the Step 3 split panel: searchable list with a few items checked on the left, metadata preview (description, datatype, attribute path) on the right. Shows how data complexity is surfaced clearly.
+
+- [ ] **Before/after** (`c1-decision-engine-before-after.png`) — Left: a messy spreadsheet grid with scattered policy logic (multiple tabs, no structure). Right: the clean rules table with consistent row structure. Keep diagrammatic — doesn't need to be pixel-perfect.
 
 ---
 
