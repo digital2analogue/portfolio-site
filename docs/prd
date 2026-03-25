@@ -64,17 +64,30 @@ Case study body sections: **Background → Problem → Approach → Solution →
 ## Remaining Work
 
 ### High Priority
-1. **Dual-summary system** — Add `card_summary` to front matter; override list template to use it
-2. **Image pipeline** — Settle on page bundles or static path; define naming convention and export workflow
-3. **Complete case studies** — OpenTable Reservations, OTKit Design System
+1. ~~**Dual-summary system**~~ ✅ Done
+2. ~~**Image pipeline**~~ ✅ Done
+3. ~~**Complete case studies — OTKit and Reservations**~~ ✅ Done
+4. **C1 Decision Engine images** — Create in Figma and add to case study (see checklist below)
 
 ### Medium Priority
-4. **Theme overrides** — Customize list and single templates for portfolio use
-5. **Homepage refinement** — Validate featured ordering, improve visual hierarchy
+5. **Theme overrides** — Customize list and single templates for portfolio use
+6. **Homepage refinement** — Validate featured ordering, improve visual hierarchy
 
 ### Future
 - Expand to multi-site structure (`.design`, `.photo`, `.blog`)
 - Align portfolio with Substack and social content distribution
+
+---
+
+## C1 Decision Engine: Figma Image Checklist
+
+All images should be abstract/conceptual — no real product data. Export PNG at 2x. Save to `/static/projects/images/` using `c1-decision-engine-[descriptor].png`.
+
+- [ ] **Hero image** (`c1-decision-engine-hero.png`) — Abstract UI shell suggesting a complex enterprise policy tool. Dark or neutral toned, with placeholder rule rows and a component-style layout.
+- [ ] **Problem: before state** (`c1-decision-engine-before.png`) — Diagram showing fragmentation: multiple disconnected spreadsheet grids or document icons with arrows going everywhere. Intentionally chaotic.
+- [ ] **System hierarchy diagram** (`c1-decision-engine-system-hierarchy.png`) — Three-tier layered diagram: Tokens → Core Components → Reusable Patterns. Clean and simple.
+- [ ] **Rule Cell anatomy** (`c1-decision-engine-rule-cell.png`) — Annotated component diagram of a single rule cell. Labels like "Upstream dependency," "Validation state," "Logic input." Most important image in the study.
+- [ ] **Before/after modular workflow** (`c1-decision-engine-before-after.png`) — Two-column split: left shows spreadsheet chaos, right shows clean modular card workflow.
 
 ---
 
