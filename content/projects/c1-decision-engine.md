@@ -48,6 +48,8 @@ Analysts relied on a patchwork of spreadsheets and inconsistent UI patterns to d
 
 The core issue wasn’t missing features—it was **structural ambiguity**.
 
+![Before and after: spreadsheet workflow versus the decision engine table](/projects/images/c1-decision-engine-before-after.png)
+
 ---
 
 ## Constraints
@@ -73,20 +75,32 @@ This allowed teams to reason about complex logic consistently while retaining fl
 ## From Fragmentation to Modular Workflows
 We replaced spreadsheet-style interfaces with modular workflows that made logic explicit and predictable.
 
+![Decision engine rules table — full view with five policy rule rows](/projects/images/c1-decision-engine-hero.png)
+
 **Key decisions**
 - Centralized a shared component library as the single source of truth
 - Defined repeatable interaction patterns for common analyst tasks
 - Created a migration roadmap aligned to system maturity
+
+The onboarding wizard walked analysts through a three-step setup — choosing an outcome type, naming the model, and selecting the data elements it could evaluate.
+
+![Three-step onboarding wizard for creating a new decision model](/projects/images/c1-decision-engine-onboarding-flow.png)
 
 ---
 
 ## Component Deep Dive: Rule Cell (Conceptual)
 One critical interaction pattern encapsulated complex decision logic into a single, reusable unit.
 
+![Rule row anatomy — annotated breakdown of each interactive element in a rule row](/projects/images/c1-decision-engine-rule-row-anatomy.png)
+
 **Design goals**
 - Surface upstream dependencies and validation states
 - Reduce interaction cost for defining logic
 - Support both novice and expert analyst behaviors
+
+Each rule row maps a data attribute to an operator, a threshold value, and a decision outcome. The inline edit model — badge tap to swap attribute, dropdown for operator, direct input for value — eliminated the modal-heavy workflows analysts had been tolerating.
+
+![Data element selector — step 3 split panel showing available attributes and metadata preview](/projects/images/c1-decision-engine-data-element-selector.png)
 
 **Impact**
 - Reduced interaction steps by ~63%

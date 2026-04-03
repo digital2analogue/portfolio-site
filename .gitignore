@@ -12,3 +12,6 @@ Thumbs.db
 
 # Environment
 .env
+
+# Temp mockup files (working artifacts, not for commit)
+c1-mockups/
