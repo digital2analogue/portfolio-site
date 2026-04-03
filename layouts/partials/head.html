@@ -1,12 +1,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 
-<!-- Adding custom.css -->
+<title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
+
+<!-- Theme CSS first -->
+{{ partialCached "head/css.html" . }}
+
+<!-- Custom overrides AFTER theme CSS so our variables win -->
 {{ $custom := resources.Get "css/custom.css" | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $custom.RelPermalink }}" integrity="{{ $custom.Data.Integrity }}">
-
-<title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
-{{ partialCached "head/css.html" . }}
 
 <!-- Font imports: Space Grotesk (headings/nav) + Spectral (body) -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
