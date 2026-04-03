@@ -44,6 +44,42 @@
 }
 
 /* =============================================
+   EXPLICIT LINK & ACCENT COLOR OVERRIDES
+   Belt-and-suspenders: ensure green shows everywhere
+   ============================================= */
+
+a {
+  color: var(--link-color) !important;
+}
+
+a:hover {
+  color: var(--link-color) !important;
+  opacity: 0.8;
+}
+
+/* Nav links get their own treatment */
+.navbar a,
+.navbar .menu a,
+.navbar .menu-item a,
+nav a {
+  color: var(--text-tertiary) !important;
+}
+
+.navbar a:hover,
+.navbar .menu a:hover,
+.navbar .menu-item a:hover,
+nav a:hover {
+  color: var(--link-color) !important;
+  opacity: 1;
+}
+
+/* Brand/site title in nav */
+.navbar .brand,
+.navbar .brand a {
+  color: var(--text-primary) !important;
+}
+
+/* =============================================
    TYPOGRAPHY: Space Grotesk (headings/nav) + Spectral (body)
    "Digital-Native + Refined"
    ============================================= */
@@ -66,6 +102,21 @@ h1, h2, h3, h4, h5, h6,
   font-family: 'Space Grotesk', system-ui, sans-serif !important;
   font-weight: 600;
   letter-spacing: -0.025em;
+}
+
+/* Heading links should inherit heading color, not link green */
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
+.post-title a,
+.featured-title a,
+.card-title a {
+  color: var(--text-primary) !important;
+}
+
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover,
+.post-title a:hover,
+.featured-title a:hover,
+.card-title a:hover {
+  color: var(--link-color) !important;
 }
 
 /* Nav and UI elements — Space Grotesk */
@@ -139,8 +190,8 @@ code, pre, .highlight {
    ============================================= */
 .cover-content { max-width: none !important; width: 100% !important; text-align: left !important; }
 .cover-content p { text-align: left !important; }
-.cover-intro a { color: var(--link-color); text-decoration: underline !important; }
-.cover-intro a:hover { color: var(--link-color); text-decoration: none !important; }
+.cover-intro a { color: var(--link-color) !important; text-decoration: underline !important; }
+.cover-intro a:hover { color: var(--link-color) !important; text-decoration: none !important; }
 p .summary { text-align: center; font-style: italic; }
 .post-content p > img { display: block; }
 .post-content p > img + em { display: block; text-align: center; font-size: 0.95rem; color: var(--text-secondary); margin-top: -1em; }
