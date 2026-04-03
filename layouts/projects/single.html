@@ -90,4 +90,28 @@
   {{ partial "giscus.html" . }}
 </article>
 
+{{/* ── Lightbox: medium-zoom ── */}}
+<style>
+  .post-content img {
+    cursor: zoom-in;
+    transition: opacity 0.2s;
+  }
+  .medium-zoom-overlay {
+    background: #111 !important;
+  }
+  .medium-zoom-image--opened {
+    cursor: zoom-out;
+  }
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/medium-zoom/1.0.8/medium-zoom.min.js"
+        integrity="sha512-FaHOSRfMi2+FxbLHmxkYH7CQiNaGkEWqpL2Og0d6raMw0tWPxJOdnD26oc0LFJLbxTSwGJcCDhv0LHUNsscA=="
+        crossorigin="anonymous"></script>
+<script>
+  mediumZoom('.post-content img', {
+    margin: 24,
+    background: 'rgba(17, 17, 17, 0.92)',
+    scrollOffset: 80,
+  });
+</script>
+
 {{ end }}
