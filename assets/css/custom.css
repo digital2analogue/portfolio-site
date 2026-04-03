@@ -1,10 +1,103 @@
 /* Custom CSS template overrides */
 
-/* Only on the homepage if your body has a home-ish class; otherwise this applies everywhere */
+/* =============================================
+   TYPOGRAPHY: Space Grotesk (headings/nav) + Newsreader (body)
+   ============================================= */
 
+/* Base body font — Newsreader serif for reading */
+body {
+  font-family: 'Newsreader', Georgia, 'Times New Roman', serif !important;
+  font-weight: 370;
+  font-optical-sizing: auto;
+  letter-spacing: 0.005em;
+}
+
+/* Headings — Space Grotesk for structure and precision */
+h1, h2, h3, h4, h5, h6,
+.post-title,
+.content h1,
+.content h2,
+.content h3,
+.content h4 {
+  font-family: 'Space Grotesk', system-ui, sans-serif !important;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
+/* Nav and UI elements — Space Grotesk */
+.navbar,
+.navbar .brand,
+.navbar .menu a,
+.navbar .menu-item a,
+nav,
+nav a,
+.footer-content,
+footer {
+  font-family: 'Space Grotesk', system-ui, sans-serif !important;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+}
+
+/* Section labels and meta — Space Grotesk uppercase */
+.post-meta,
+.post-date,
+.post-reading-time,
+.tag,
+.category,
+.terms-item {
+  font-family: 'Space Grotesk', system-ui, sans-serif !important;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+}
+
+/* Body text refinements */
+.post-content p,
+.post-content li,
+.post-content blockquote {
+  font-family: 'Newsreader', Georgia, 'Times New Roman', serif !important;
+  font-weight: 370;
+  line-height: 1.75;
+  font-optical-sizing: auto;
+}
+
+/* Post title specific */
+.post-title {
+  font-family: 'Space Grotesk', system-ui, sans-serif !important;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
+/* Featured card titles */
+.featured-title,
+.featured-card .title,
+.card-title {
+  font-family: 'Space Grotesk', system-ui, sans-serif !important;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+/* Summary/description text — Newsreader */
+.post-summary,
+.featured-summary,
+.card-summary {
+  font-family: 'Newsreader', Georgia, 'Times New Roman', serif !important;
+  font-weight: 370;
+  font-style: normal;
+}
+
+/* Code blocks stay monospace */
+code, pre, .highlight {
+  font-family: 'Monaco', 'Courier New', monospace !important;
+}
+
+/* =============================================
+   LAYOUT OVERRIDES (existing)
+   ============================================= */
+
+/* Only on the homepage if your body has a home-ish class; otherwise this applies everywhere */
 .cover-content {
-  max-width: none !important; 
-  width: 100% !important; 
+  max-width: none !important;
+  width: 100% !important;
   text-align: left !important;
 }
 
@@ -12,10 +105,7 @@
   text-align: left !important;
 }
 
-
-
 /* Underline links in main content - River's custom */
-
 .cover-intro a {
   color: var(--link-color);
   text-decoration: underline !important;
