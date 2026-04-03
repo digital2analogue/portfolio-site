@@ -25,6 +25,10 @@ theme = 'yassi'
     weight = 40
     
 [params]
+# Color theme: Phosphor Pulse
+accentColor = "#22A84E"
+accentColorDark = "#4ADE6E"
+
 # Homepage defaults 
 showFeaturedProjects = false 
 showBlogPosts = false
@@ -56,4 +60,3 @@ showHeroImage = false
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
-
