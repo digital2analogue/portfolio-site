@@ -1,6 +1,49 @@
 /* Custom CSS template overrides */
 
 /* =============================================
+   COLOR SYSTEM: "Phosphor Pulse"
+   Subtle green-tinted darks, bright terminal green accent
+   ============================================= */
+
+:root {
+  --bg-primary: #F8FAF7;
+  --bg-secondary: #EFF2EC;
+  --bg-tertiary: #E6EBE2;
+  --text-primary: #1A1E18;
+  --text-secondary: #3A4038;
+  --text-tertiary: #636B5E;
+  --text-quaternary: #868E80;
+  --border-color: #D8DED2;
+  --border-light: #E2E8DC;
+  --link-color: #22A84E;
+  --accent-color: #22A84E;
+  --code-bg: #EFF2EC;
+  --code-text: #1A6B32;
+  --shadow-sm: rgba(10, 13, 10, 0.08);
+  --shadow-md: rgba(10, 13, 10, 0.12);
+  --card-bg: #F0F3ED;
+}
+
+[data-theme="dark"] {
+  --bg-primary: #0A0D0A;
+  --bg-secondary: #121612;
+  --bg-tertiary: #1A201A;
+  --text-primary: #C8CFC4;
+  --text-secondary: #A0A89A;
+  --text-tertiary: #6A7266;
+  --text-quaternary: #444C40;
+  --border-color: #1E241E;
+  --border-light: #242C24;
+  --link-color: #4ADE6E;
+  --accent-color: #4ADE6E;
+  --code-bg: #121612;
+  --code-text: #4ADE6E;
+  --shadow-sm: rgba(0, 0, 0, 0.3);
+  --shadow-md: rgba(0, 0, 0, 0.5);
+  --card-bg: #121612;
+}
+
+/* =============================================
    TYPOGRAPHY: Space Grotesk (headings/nav) + Spectral (body)
    "Digital-Native + Refined"
    ============================================= */
