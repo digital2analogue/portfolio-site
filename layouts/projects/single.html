@@ -90,28 +90,62 @@
   {{ partial "giscus.html" . }}
 </article>
 
-{{/* ── Lightbox: medium-zoom ── */}}
+{{/* ── Lightbox: vanilla JS, no external deps ── */}}
 <style>
-  .post-content img {
-    cursor: zoom-in;
-    transition: opacity 0.2s;
-  }
-  .medium-zoom-overlay {
-    background: #111 !important;
-  }
-  .medium-zoom-image--opened {
+  .post-content img { cursor: zoom-in; }
+
+  #lbx-overlay {
+    display: none;
+    position: fixed; inset: 0; z-index: 9999;
+    background: rgba(15, 15, 15, 0.92);
+    align-items: center; justify-content: center;
     cursor: zoom-out;
   }
+  #lbx-overlay.open { display: flex; }
+  #lbx-img {
+    max-width: 92vw; max-height: 92vh;
+    object-fit: contain;
+    border-radius: 4px;
+    box-shadow: 0 8px 48px rgba(0,0,0,0.6);
+    animation: lbx-in 0.18s ease;
+  }
+  @keyframes lbx-in {
+    from { opacity: 0; transform: scale(0.94); }
+    to   { opacity: 1; transform: scale(1); }
+  }
 </style>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/medium-zoom/1.0.8/medium-zoom.min.js"
-        integrity="sha512-FaHOSRfMi2+FxbLHmxkYH7CQiNaGkEWqpL2Og0d6raMw0tWPxJOdnD26oc0LFJLbxTSwGJcCDhv0LHUNsscA=="
-        crossorigin="anonymous"></script>
+
+<div id="lbx-overlay" role="dialog" aria-modal="true" aria-label="Image lightbox">
+  <img id="lbx-img" src="" alt="">
+</div>
+
 <script>
-  mediumZoom('.post-content img', {
-    margin: 24,
-    background: 'rgba(17, 17, 17, 0.92)',
-    scrollOffset: 80,
+(function () {
+  var overlay = document.getElementById('lbx-overlay');
+  var lbxImg  = document.getElementById('lbx-img');
+
+  function open(src, alt) {
+    lbxImg.src = src;
+    lbxImg.alt = alt || '';
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function close() {
+    overlay.classList.remove('open');
+    document.body.style.overflow = '';
+    lbxImg.src = '';
+  }
+
+  // Attach to all images inside post-content
+  document.querySelectorAll('.post-content img').forEach(function (img) {
+    img.addEventListener('click', function () { open(img.src, img.alt); });
   });
+
+  overlay.addEventListener('click', close);
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') close();
+  });
+})();
 </script>
 
 {{ end }}
