@@ -1,13 +1,13 @@
 /* Custom CSS template overrides */
 
 /* =============================================
-   TYPOGRAPHY: Space Grotesk (headings/nav) + Lora (body)
-   "Technical + Calligraphic"
+   TYPOGRAPHY: Space Grotesk (headings/nav) + Spectral (body)
+   "Digital-Native + Refined"
    ============================================= */
 
-/* Base body font — Lora serif for reading */
+/* Base body font — Spectral serif for reading */
 body {
-  font-family: 'Lora', Georgia, 'Times New Roman', serif !important;
+  font-family: 'Spectral', Georgia, 'Times New Roman', serif !important;
   font-weight: 400;
   font-optical-sizing: auto;
   letter-spacing: 0.005em;
@@ -51,13 +51,13 @@ footer {
   letter-spacing: 0.03em;
 }
 
-/* Post content body — Lora */
+/* Post content body — Spectral */
 .post-content p,
 .post-content li,
 .post-content blockquote {
-  font-family: 'Lora', Georgia, 'Times New Roman', serif !important;
+  font-family: 'Spectral', Georgia, 'Times New Roman', serif !important;
   font-weight: 400;
-  line-height: 1.75;
+  line-height: 1.72;
   font-optical-sizing: auto;
 }
 
@@ -77,11 +77,11 @@ footer {
   letter-spacing: -0.02em;
 }
 
-/* Summaries — Lora */
+/* Summaries — Spectral */
 .post-summary,
 .featured-summary,
 .card-summary {
-  font-family: 'Lora', Georgia, 'Times New Roman', serif !important;
+  font-family: 'Spectral', Georgia, 'Times New Roman', serif !important;
   font-weight: 400;
   font-style: normal;
 }
