@@ -30,7 +30,7 @@
   --bg-tertiary: #1A201A;
   --text-primary: #C8CFC4;
   --text-secondary: #A0A89A;
-  --text-tertiary: #6A7266;
+  --text-tertiary: #7A8274;
   --text-quaternary: #444C40;
   --border-color: #1E241E;
   --border-light: #242C24;
@@ -178,6 +178,7 @@ footer {
   font-family: 'Spectral', Georgia, 'Times New Roman', serif !important;
   font-weight: 400;
   font-style: normal;
+  color: var(--text-tertiary);
 }
 
 /* Code blocks */
