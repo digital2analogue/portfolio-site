@@ -13,6 +13,6 @@ I've spent the last decade designing across mobile, web, and enterprise platform
 
 Outside of work, I'm still thinking about systems — just different ones. I spend time modding old handhelds: PSPs, Game Boys, anything that can be given new life with a backlit screen or custom firmware. I shoot with cameras that cost less than a sandwich, with sensors that struggle in anything but perfect light — which is exactly why I like them. I'm interested in the indie web as both an idea and a practice. Building and maintaining this site is part of that.
 
-I write a Substack called [LOW BANDWIDTH](https://littlem0nsters.substack.com/) about creativity, analog life, and the tools we choose to work with. It's where I think out loud.
+I write a Substack called [LOW BANDWIDTH](https://riverromney.substack.com/) about creativity, analog life, and the tools we choose to work with. It's where I think out loud.
 
 Want to get in touch? [contact@riverromney.com](mailto:contact@riverromney.com)
