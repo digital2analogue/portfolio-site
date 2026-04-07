@@ -40,58 +40,15 @@
 }
 
 /* =============================================
-   COLOR SYSTEM: "Phosphor Pulse"
-   Subtle green-tinted darks, bright terminal green accent
-   ============================================= */
-
-:root {
-  --bg-primary: #F8FAF7;
-  --bg-secondary: #EFF2EC;
-  --bg-tertiary: #E6EBE2;
-  --text-primary: #1A1E18;
-  --text-secondary: #3A4038;
-  --text-tertiary: #636B5E;
-  --text-quaternary: #868E80;
-  --border-color: #D8DED2;
-  --border-light: #E2E8DC;
-  --link-color: #22A84E;
-  --accent-color: #22A84E;
-  --code-bg: #EFF2EC;
-  --code-text: #1A6B32;
-  --shadow-sm: rgba(10, 13, 10, 0.08);
-  --shadow-md: rgba(10, 13, 10, 0.12);
-  --card-bg: #F0F3ED;
-}
-
-[data-theme="dark"] {
-  --bg-primary: var(--color-bg-primary);
-  --bg-secondary: #121612;
-  --bg-tertiary: #1A201A;
-  --text-primary: var(--color-text-primary);
-  --text-secondary: var(--color-text-secondary);
-  --text-tertiary: #7A8274;
-  --text-quaternary: #444C40;
-  --border-color: var(--color-border-default);
-  --border-light: #242C24;
-  --link-color: var(--color-accent);
-  --accent-color: var(--color-accent);
-  --code-bg: #121612;
-  --code-text: var(--color-accent);
-  --shadow-sm: rgba(0, 0, 0, 0.3);
-  --shadow-md: rgba(0, 0, 0, 0.5);
-  --card-bg: #121612;
-}
-
-/* =============================================
    EXPLICIT LINK & ACCENT COLOR OVERRIDES
    Resting: text color + underline (matches river-intro)
    Hover: green accent
    ============================================= */
 
 a {
-  color: var(--text-primary) !important;
+  color: var(--color-text-primary) !important;
   text-decoration: underline !important;
-  text-decoration-color: var(--text-primary) !important;
+  text-decoration-color: var(--color-text-primary) !important;
   text-underline-offset: 3px !important;
   transition: color 0.15s ease, text-decoration-color 0.15s ease !important;
 }
@@ -107,21 +64,21 @@ a:hover {
 .navbar .menu a,
 .navbar .menu-item a,
 nav a {
-  color: var(--text-tertiary) !important;
+  color: var(--color-text-muted) !important;
 }
 
 .navbar a:hover,
 .navbar .menu a:hover,
 .navbar .menu-item a:hover,
 nav a:hover {
-  color: var(--link-color) !important;
+  color: var(--color-green-accent) !important;
   opacity: 1;
 }
 
 /* Brand/site title in nav */
 .navbar .brand,
 .navbar .brand a {
-  color: var(--text-primary) !important;
+  color: var(--color-text-primary) !important;
 }
 
 /* =============================================
@@ -154,14 +111,14 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
 .post-title a,
 .featured-title a,
 .card-title a {
-  color: var(--text-primary) !important;
+  color: var(--color-text-primary) !important;
 }
 
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover,
 .post-title a:hover,
 .featured-title a:hover,
 .card-title a:hover {
-  color: var(--link-color) !important;
+  color: var(--color-green-accent) !important;
 }
 
 /* Nav and UI elements — Space Grotesk (using actual theme class names) */
@@ -228,7 +185,7 @@ footer {
   font-family: 'Spectral', Georgia, 'Times New Roman', serif !important;
   font-weight: var(--font-weight-regular) !important;
   font-style: normal;
-  color: var(--text-tertiary);
+  color: var(--color-text-muted);
 }
 
 /* Code blocks */
@@ -241,8 +198,8 @@ code, pre, .highlight {
    ============================================= */
 .cover-content { max-width: none !important; width: 100% !important; text-align: left !important; }
 .cover-content p { text-align: left !important; }
-.cover-intro a { color: var(--text-primary) !important; text-decoration: underline !important; text-decoration-color: var(--text-primary) !important; text-underline-offset: 3px !important; }
+.cover-intro a { color: var(--color-text-primary) !important; text-decoration: underline !important; text-decoration-color: var(--color-text-primary) !important; text-underline-offset: 3px !important; }
 .cover-intro a:hover { color: var(--color-green-accent) !important; text-decoration-color: rgba(74, 222, 110, 0.7) !important; }
 p .summary { text-align: center; font-style: italic; }
 .post-content p > img { display: block; }
-.post-content p > img + em { display: block; text-align: center; font-size: 0.95rem; color: var(--text-secondary); margin-top: -1em; }
+.post-content p > img + em { display: block; text-align: center; font-size: 0.95rem; color: var(--color-text-secondary); margin-top: -1em; }
