@@ -15,3 +15,9 @@ Thumbs.db
 
 # Temp mockup files (working artifacts, not for commit)
 c1-mockups/
+
+# Claude Code worktrees (local only, never commit)
+.claude/worktrees/
+
+# Netlify cache
+.netlify/
