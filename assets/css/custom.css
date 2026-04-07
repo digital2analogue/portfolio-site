@@ -46,9 +46,9 @@
   --color-text-muted: var(--color-green-600);
   --color-accent: var(--color-green-accent);
   --color-border-default: var(--color-green-900);
-  --font-title-large: var(--font-weight-light) var(--font-size-3xl)/var(--font-line-height-tight) var(--font-family-sans);
-  --font-title-medium: var(--font-weight-light) var(--font-size-2xl)/var(--font-line-height-snug) var(--font-family-sans);
-  --font-title-small: var(--font-weight-medium) var(--font-size-lg)/var(--font-line-height-snug) var(--font-family-sans);
+  --font-title-large: var(--font-weight-regular) var(--font-size-3xl)/var(--font-line-height-tight) var(--font-family-sans);
+  --font-title-medium: var(--font-weight-regular) var(--font-size-2xl)/var(--font-line-height-snug) var(--font-family-sans);
+  --font-title-small: var(--font-weight-regular) var(--font-size-lg)/var(--font-line-height-snug) var(--font-family-sans);
   --font-body-large: var(--font-weight-regular) var(--font-size-base)/var(--font-line-height-normal) var(--font-family-serif);
   --font-body-medium: var(--font-weight-regular) var(--font-size-sm)/var(--font-line-height-normal) var(--font-family-serif);
   --font-body-small: var(--font-weight-regular) var(--font-size-xs)/var(--font-line-height-normal) var(--font-family-serif);
@@ -218,16 +218,10 @@ code, pre, .highlight {
 /* Cover intro paragraphs — title-small */
 .cover-intro p:nth-of-type(-n+2) {
   font-family: var(--font-family-sans) !important;
-  font-weight: var(--font-weight-medium) !important;
+  font-weight: var(--font-weight-regular) !important;
   font-size: var(--font-size-lg) !important;
   line-height: var(--font-line-height-snug) !important;
   letter-spacing: -0.01em !important;
-}
-
-@media (max-width: 480px) {
-  .cover-intro p:nth-of-type(-n+2) {
-    font-size: var(--font-size-md) !important;
-  }
 }
 
 p .summary { text-align: center; font-style: italic; }
