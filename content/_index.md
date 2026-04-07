@@ -16,8 +16,8 @@ I’ve worked at:
 - ExpertVoice
 - The Salt Lake Tribune [^1]
 
-1: At digital advertising subdivision for the Salt Lake Tribune 
-
 My [personal mantra](/preamble/) when it comes to design is that cross-functional collaboration and understanding is key to success.
 
 Want to have a conversation? Drop me a line at contact@riverromney.com
+
+[^1]: At digital advertising subdivision for the Salt Lake Tribune
