@@ -27,22 +27,22 @@
 }
 
 [data-theme="dark"] {
-  --bg-primary: #0A0D0A;
-  --bg-secondary: #121612;
+  --bg-primary: var(--color-bg-primary);
+  --bg-secondary: var(--color-bg-secondary);
   --bg-tertiary: #1A201A;
-  --text-primary: #C8CFC4;
-  --text-secondary: #A0A89A;
-  --text-tertiary: #7A8274;
+  --text-primary: var(--color-text-primary);
+  --text-secondary: var(--color-text-secondary);
+  --text-tertiary: var(--color-text-muted);
   --text-quaternary: #444C40;
-  --border-color: #1E241E;
+  --border-color: var(--color-border-default);
   --border-light: #242C24;
-  --link-color: #4ADE6E;
-  --accent-color: #4ADE6E;
-  --code-bg: #121612;
-  --code-text: #4ADE6E;
+  --link-color: var(--color-accent);
+  --accent-color: var(--color-accent);
+  --code-bg: var(--color-bg-secondary);
+  --code-text: var(--color-accent);
   --shadow-sm: rgba(0, 0, 0, 0.3);
   --shadow-md: rgba(0, 0, 0, 0.5);
-  --card-bg: #121612;
+  --card-bg: var(--color-bg-secondary);
 }
 
 /* =============================================
@@ -88,7 +88,7 @@ nav a:hover {
 
 /* Base body font — Spectral serif for reading */
 body {
-  font-family: 'Spectral', Georgia, 'Times New Roman', serif !important;
+  font-family: var(--font-family-serif) !important;
   font-weight: var(--font-weight-regular) !important;
   font-optical-sizing: auto;
   letter-spacing: 0.005em;
@@ -101,7 +101,7 @@ h1, h2, h3, h4, h5, h6,
 .content h2,
 .content h3,
 .content h4 {
-  font-family: 'Space Grotesk', system-ui, sans-serif !important;
+  font-family: var(--font-family-sans) !important;
   font-weight: var(--font-weight-light) !important;
   letter-spacing: -0.025em;
 }
@@ -130,7 +130,7 @@ nav,
 nav a,
 .footer-content,
 footer {
-  font-family: 'Space Grotesk', system-ui, sans-serif !important;
+  font-family: var(--font-family-sans) !important;
   font-weight: var(--font-weight-regular) !important;
   letter-spacing: 0.03em;
 }
@@ -147,7 +147,7 @@ footer {
 .tag,
 .category,
 .terms-item {
-  font-family: 'Space Grotesk', system-ui, sans-serif !important;
+  font-family: var(--font-family-sans) !important;
   font-weight: var(--font-weight-regular) !important;
   letter-spacing: 0.03em;
 }
@@ -156,7 +156,7 @@ footer {
 .post-content p,
 .post-content li,
 .post-content blockquote {
-  font-family: 'Spectral', Georgia, 'Times New Roman', serif !important;
+  font-family: var(--font-family-serif) !important;
   font-weight: var(--font-weight-regular) !important;
   line-height: 1.72;
   font-optical-sizing: auto;
@@ -164,7 +164,7 @@ footer {
 
 /* Post titles — Space Grotesk */
 .post-title {
-  font-family: 'Space Grotesk', system-ui, sans-serif !important;
+  font-family: var(--font-family-sans) !important;
   font-weight: var(--font-weight-light) !important;
   letter-spacing: -0.025em;
 }
@@ -173,7 +173,7 @@ footer {
 .featured-title,
 .featured-card .title,
 .card-title {
-  font-family: 'Space Grotesk', system-ui, sans-serif !important;
+  font-family: var(--font-family-sans) !important;
   font-weight: var(--font-weight-light) !important;
   letter-spacing: -0.02em;
 }
@@ -182,7 +182,7 @@ footer {
 .post-summary,
 .featured-summary,
 .card-summary {
-  font-family: 'Spectral', Georgia, 'Times New Roman', serif !important;
+  font-family: var(--font-family-serif) !important;
   font-weight: var(--font-weight-regular) !important;
   font-style: normal;
   color: var(--text-tertiary);
@@ -190,7 +190,7 @@ footer {
 
 /* Code blocks */
 code, pre, .highlight {
-  font-family: 'Monaco', 'Courier New', monospace !important;
+  font-family: var(--font-family-mono) !important;
 }
 
 /* =============================================
