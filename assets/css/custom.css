@@ -213,6 +213,21 @@ code, pre, .highlight {
 .cover-content p { text-align: left !important; }
 .cover-intro a { color: var(--color-text-primary) !important; text-decoration: underline !important; text-decoration-color: var(--color-text-primary) !important; text-underline-offset: 3px !important; }
 .cover-intro a:hover { color: var(--color-green-accent) !important; text-decoration-color: rgba(74, 222, 110, 0.7) !important; }
+/* Cover intro paragraphs — title-medium */
+.cover-intro p:nth-of-type(-n+2) {
+  font-family: var(--font-family-sans) !important;
+  font-weight: var(--font-weight-light) !important;
+  font-size: var(--font-size-2xl) !important;
+  line-height: var(--font-line-height-snug) !important;
+  letter-spacing: -0.01em !important;
+}
+
+@media (max-width: 480px) {
+  .cover-intro p:nth-of-type(-n+2) {
+    font-size: var(--font-size-xl) !important;
+  }
+}
+
 p .summary { text-align: center; font-style: italic; }
 .post-content p > img { display: block; }
 .post-content p > img + em { display: block; text-align: center; font-size: 0.95rem; color: var(--color-text-secondary); margin-top: -1em; }
