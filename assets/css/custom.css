@@ -49,8 +49,10 @@
   --font-title-large: var(--font-weight-light) var(--font-size-3xl)/var(--font-line-height-tight) var(--font-family-sans);
   --font-title-medium: var(--font-weight-light) var(--font-size-2xl)/var(--font-line-height-snug) var(--font-family-sans);
   --font-title-small: var(--font-weight-medium) var(--font-size-lg)/var(--font-line-height-snug) var(--font-family-sans);
-  --font-body-medium: var(--font-weight-regular) var(--font-size-base)/var(--font-line-height-normal) var(--font-family-serif);
-  --font-body-small: var(--font-weight-regular) var(--font-size-sm)/var(--font-line-height-normal) var(--font-family-serif);
+  --font-body-large: var(--font-weight-regular) var(--font-size-base)/var(--font-line-height-normal) var(--font-family-serif);
+  --font-body-medium: var(--font-weight-regular) var(--font-size-sm)/var(--font-line-height-normal) var(--font-family-serif);
+  --font-body-small: var(--font-weight-regular) var(--font-size-xs)/var(--font-line-height-normal) var(--font-family-serif);
+  --font-label-large: var(--font-weight-regular) var(--font-size-base)/var(--font-line-height-snug) var(--font-family-sans);
   --font-label-medium: var(--font-weight-regular) var(--font-size-sm)/var(--font-line-height-snug) var(--font-family-sans);
   --font-label-small: var(--font-weight-regular) var(--font-size-xs)/var(--font-line-height-snug) var(--font-family-sans);
 }
@@ -105,7 +107,7 @@ nav a:hover {
 
 /* Base body font — Spectral serif for reading */
 body {
-  font: var(--font-body-medium) !important;
+  font: var(--font-body-large) !important;
   font-optical-sizing: auto;
   letter-spacing: 0.005em;
 }
@@ -174,7 +176,7 @@ footer {
 .post-content p,
 .post-content li,
 .post-content blockquote {
-  font: var(--font-body-medium) !important;
+  font: var(--font-body-large) !important;
   font-optical-sizing: auto;
 }
 
@@ -196,7 +198,7 @@ footer {
 .post-summary,
 .featured-summary,
 .card-summary {
-  font: var(--font-body-medium) !important;
+  font: var(--font-body-large) !important;
   font-style: normal;
   color: var(--color-text-muted);
 }
@@ -213,18 +215,18 @@ code, pre, .highlight {
 .cover-content p { text-align: left !important; }
 .cover-intro a { color: var(--color-text-primary) !important; text-decoration: underline !important; text-decoration-color: var(--color-text-primary) !important; text-underline-offset: 3px !important; }
 .cover-intro a:hover { color: var(--color-green-accent) !important; text-decoration-color: rgba(74, 222, 110, 0.7) !important; }
-/* Cover intro paragraphs — title-medium */
+/* Cover intro paragraphs — title-small */
 .cover-intro p:nth-of-type(-n+2) {
   font-family: var(--font-family-sans) !important;
-  font-weight: var(--font-weight-light) !important;
-  font-size: var(--font-size-2xl) !important;
+  font-weight: var(--font-weight-medium) !important;
+  font-size: var(--font-size-lg) !important;
   line-height: var(--font-line-height-snug) !important;
   letter-spacing: -0.01em !important;
 }
 
 @media (max-width: 480px) {
   .cover-intro p:nth-of-type(-n+2) {
-    font-size: var(--font-size-xl) !important;
+    font-size: var(--font-size-md) !important;
   }
 }
 
