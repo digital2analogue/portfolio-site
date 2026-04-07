@@ -107,6 +107,7 @@ nav a:hover {
 
 /* Base body font — Spectral serif for reading */
 body {
+  background-color: var(--color-bg-primary) !important;
   font: var(--font-body-large) !important;
   font-optical-sizing: auto;
   letter-spacing: 0.005em;
@@ -222,6 +223,14 @@ code, pre, .highlight {
   font-size: var(--font-size-lg) !important;
   line-height: var(--font-line-height-snug) !important;
   letter-spacing: -0.01em !important;
+}
+
+/* "I've worked at:" label — title-small */
+.cover-intro p:has(+ ul) {
+  font-family: var(--font-family-sans) !important;
+  font-weight: var(--font-weight-regular) !important;
+  font-size: var(--font-size-lg) !important;
+  line-height: var(--font-line-height-snug) !important;
 }
 
 p .summary { text-align: center; font-style: italic; }
