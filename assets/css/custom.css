@@ -1,6 +1,43 @@
-@import url('variables.css');
-
 /* Custom CSS template overrides */
+
+/* =============================================
+   BRAND TOKENS (inlined from design system for Hugo compatibility)
+   Do not edit directly — source of truth is assets/css/variables.css
+   ============================================= */
+
+:root {
+  --color-green-200: #c8cfc4;
+  --color-green-400: #a0a89a;
+  --color-green-500: #7a9e80;
+  --color-green-600: #8b9683;
+  --color-green-900: #1e241e;
+  --color-green-950: #0a0d0a;
+  --color-green-accent: #4ade6e;
+  --color-neutral-white: #ffffff;
+  --color-neutral-black: #000000;
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 48px;
+  --space-2xl: 80px;
+  --font-family-sans: 'Space Grotesk';
+  --font-family-serif: Spectral;
+  --font-family-mono: 'JetBrains Mono';
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --color-bg-primary: var(--color-green-950);
+  --color-bg-secondary: var(--color-green-900);
+  --color-text-primary: var(--color-green-200);
+  --color-text-secondary: var(--color-green-400);
+  --color-text-muted: var(--color-green-600);
+  --color-accent: var(--color-green-accent);
+  --color-border-default: var(--color-green-900);
+  --font-heading: var(--font-weight-light) 16px var(--font-family-sans);
+  --font-body: var(--font-weight-regular) 16px var(--font-family-serif);
+  --font-ui: var(--font-weight-regular) 16px var(--font-family-sans);
+}
 
 /* =============================================
    COLOR SYSTEM: "Phosphor Pulse"
@@ -28,21 +65,21 @@
 
 [data-theme="dark"] {
   --bg-primary: var(--color-bg-primary);
-  --bg-secondary: var(--color-bg-secondary);
+  --bg-secondary: #121612;
   --bg-tertiary: #1A201A;
   --text-primary: var(--color-text-primary);
   --text-secondary: var(--color-text-secondary);
-  --text-tertiary: var(--color-text-muted);
+  --text-tertiary: #7A8274;
   --text-quaternary: #444C40;
   --border-color: var(--color-border-default);
   --border-light: #242C24;
   --link-color: var(--color-accent);
   --accent-color: var(--color-accent);
-  --code-bg: var(--color-bg-secondary);
+  --code-bg: #121612;
   --code-text: var(--color-accent);
   --shadow-sm: rgba(0, 0, 0, 0.3);
   --shadow-md: rgba(0, 0, 0, 0.5);
-  --card-bg: var(--color-bg-secondary);
+  --card-bg: #121612;
 }
 
 /* =============================================
@@ -88,7 +125,7 @@ nav a:hover {
 
 /* Base body font — Spectral serif for reading */
 body {
-  font-family: var(--font-family-serif) !important;
+  font-family: 'Spectral', Georgia, 'Times New Roman', serif !important;
   font-weight: var(--font-weight-regular) !important;
   font-optical-sizing: auto;
   letter-spacing: 0.005em;
@@ -101,7 +138,7 @@ h1, h2, h3, h4, h5, h6,
 .content h2,
 .content h3,
 .content h4 {
-  font-family: var(--font-family-sans) !important;
+  font-family: 'Space Grotesk', system-ui, sans-serif !important;
   font-weight: var(--font-weight-light) !important;
   letter-spacing: -0.025em;
 }
@@ -130,7 +167,7 @@ nav,
 nav a,
 .footer-content,
 footer {
-  font-family: var(--font-family-sans) !important;
+  font-family: 'Space Grotesk', system-ui, sans-serif !important;
   font-weight: var(--font-weight-regular) !important;
   letter-spacing: 0.03em;
 }
@@ -147,7 +184,7 @@ footer {
 .tag,
 .category,
 .terms-item {
-  font-family: var(--font-family-sans) !important;
+  font-family: 'Space Grotesk', system-ui, sans-serif !important;
   font-weight: var(--font-weight-regular) !important;
   letter-spacing: 0.03em;
 }
@@ -156,7 +193,7 @@ footer {
 .post-content p,
 .post-content li,
 .post-content blockquote {
-  font-family: var(--font-family-serif) !important;
+  font-family: 'Spectral', Georgia, 'Times New Roman', serif !important;
   font-weight: var(--font-weight-regular) !important;
   line-height: 1.72;
   font-optical-sizing: auto;
@@ -164,7 +201,7 @@ footer {
 
 /* Post titles — Space Grotesk */
 .post-title {
-  font-family: var(--font-family-sans) !important;
+  font-family: 'Space Grotesk', system-ui, sans-serif !important;
   font-weight: var(--font-weight-light) !important;
   letter-spacing: -0.025em;
 }
@@ -173,7 +210,7 @@ footer {
 .featured-title,
 .featured-card .title,
 .card-title {
-  font-family: var(--font-family-sans) !important;
+  font-family: 'Space Grotesk', system-ui, sans-serif !important;
   font-weight: var(--font-weight-light) !important;
   letter-spacing: -0.02em;
 }
@@ -182,7 +219,7 @@ footer {
 .post-summary,
 .featured-summary,
 .card-summary {
-  font-family: var(--font-family-serif) !important;
+  font-family: 'Spectral', Georgia, 'Times New Roman', serif !important;
   font-weight: var(--font-weight-regular) !important;
   font-style: normal;
   color: var(--text-tertiary);
@@ -190,7 +227,7 @@ footer {
 
 /* Code blocks */
 code, pre, .highlight {
-  font-family: var(--font-family-mono) !important;
+  font-family: 'Monaco', 'Courier New', monospace !important;
 }
 
 /* =============================================
