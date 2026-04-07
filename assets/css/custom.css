@@ -84,16 +84,22 @@
 
 /* =============================================
    EXPLICIT LINK & ACCENT COLOR OVERRIDES
-   Belt-and-suspenders: ensure green shows everywhere
+   Resting: text color + underline (matches river-intro)
+   Hover: green accent
    ============================================= */
 
 a {
-  color: var(--link-color) !important;
+  color: var(--text-primary) !important;
+  text-decoration: underline !important;
+  text-decoration-color: var(--text-primary) !important;
+  text-underline-offset: 3px !important;
+  transition: color 0.15s ease, text-decoration-color 0.15s ease !important;
 }
 
 a:hover {
-  color: var(--link-color) !important;
-  opacity: 0.8;
+  color: var(--color-green-accent) !important;
+  text-decoration-color: rgba(74, 222, 110, 0.7) !important;
+  opacity: 1 !important;
 }
 
 /* Nav links get their own treatment */
@@ -235,8 +241,8 @@ code, pre, .highlight {
    ============================================= */
 .cover-content { max-width: none !important; width: 100% !important; text-align: left !important; }
 .cover-content p { text-align: left !important; }
-.cover-intro a { color: var(--link-color) !important; text-decoration: underline !important; }
-.cover-intro a:hover { color: var(--link-color) !important; text-decoration: none !important; }
+.cover-intro a { color: var(--text-primary) !important; text-decoration: underline !important; text-decoration-color: var(--text-primary) !important; text-underline-offset: 3px !important; }
+.cover-intro a:hover { color: var(--color-green-accent) !important; text-decoration-color: rgba(74, 222, 110, 0.7) !important; }
 p .summary { text-align: center; font-style: italic; }
 .post-content p > img { display: block; }
 .post-content p > img + em { display: block; text-align: center; font-size: 0.95rem; color: var(--text-secondary); margin-top: -1em; }
