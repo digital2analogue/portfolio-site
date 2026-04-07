@@ -82,7 +82,7 @@ a:hover {
 .navbar .menu a,
 .navbar .menu-item a,
 nav a {
-  color: var(--color-text-muted) !important;
+  color: var(--color-text-primary) !important;
   text-decoration: none !important;
 }
 
@@ -225,12 +225,14 @@ code, pre, .highlight {
   letter-spacing: -0.01em !important;
 }
 
-/* "I've worked at:" label — title-small */
+/* "I've worked at:" label — label-large (matches river-intro .work h2) */
 .cover-intro p:has(+ ul) {
   font-family: var(--font-family-sans) !important;
   font-weight: var(--font-weight-regular) !important;
-  font-size: var(--font-size-lg) !important;
+  font-size: var(--font-size-base) !important;
   line-height: var(--font-line-height-snug) !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.15em !important;
 }
 
 p .summary { text-align: center; font-style: italic; }
