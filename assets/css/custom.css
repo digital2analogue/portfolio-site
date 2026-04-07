@@ -87,7 +87,7 @@ nav a:hover {
 /* Base body font — Spectral serif for reading */
 body {
   font-family: 'Spectral', Georgia, 'Times New Roman', serif !important;
-  font-weight: 400;
+  font-weight: 400 !important;
   font-optical-sizing: auto;
   letter-spacing: 0.005em;
 }
@@ -100,7 +100,7 @@ h1, h2, h3, h4, h5, h6,
 .content h3,
 .content h4 {
   font-family: 'Space Grotesk', system-ui, sans-serif !important;
-  font-weight: 300;
+  font-weight: 300 !important;
   letter-spacing: -0.025em;
 }
 
@@ -119,17 +119,17 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover,
   color: var(--link-color) !important;
 }
 
-/* Nav and UI elements — Space Grotesk */
+/* Nav and UI elements — Space Grotesk (using actual theme class names) */
 .navbar,
-.navbar .brand,
-.navbar .menu a,
-.navbar .menu-item a,
+.navbar-brand,
+.navbar-brand a,
+.navbar-nav a,
 nav,
 nav a,
 .footer-content,
 footer {
   font-family: 'Space Grotesk', system-ui, sans-serif !important;
-  font-weight: 400;
+  font-weight: 400 !important;
   letter-spacing: 0.03em;
 }
 
@@ -141,7 +141,7 @@ footer {
 .category,
 .terms-item {
   font-family: 'Space Grotesk', system-ui, sans-serif !important;
-  font-weight: 400;
+  font-weight: 400 !important;
   letter-spacing: 0.03em;
 }
 
@@ -150,7 +150,7 @@ footer {
 .post-content li,
 .post-content blockquote {
   font-family: 'Spectral', Georgia, 'Times New Roman', serif !important;
-  font-weight: 400;
+  font-weight: 400 !important;
   line-height: 1.72;
   font-optical-sizing: auto;
 }
@@ -158,7 +158,7 @@ footer {
 /* Post titles — Space Grotesk */
 .post-title {
   font-family: 'Space Grotesk', system-ui, sans-serif !important;
-  font-weight: 300;
+  font-weight: 300 !important;
   letter-spacing: -0.025em;
 }
 
@@ -167,7 +167,7 @@ footer {
 .featured-card .title,
 .card-title {
   font-family: 'Space Grotesk', system-ui, sans-serif !important;
-  font-weight: 300;
+  font-weight: 300 !important;
   letter-spacing: -0.02em;
 }
 
@@ -176,7 +176,7 @@ footer {
 .featured-summary,
 .card-summary {
   font-family: 'Spectral', Georgia, 'Times New Roman', serif !important;
-  font-weight: 400;
+  font-weight: 400 !important;
   font-style: normal;
   color: var(--text-tertiary);
 }
