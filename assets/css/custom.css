@@ -133,6 +133,11 @@ footer {
   letter-spacing: 0.03em;
 }
 
+/* Navbar brand underline — thinner than theme default (3px → 1px) */
+.navbar-brand a {
+  border-bottom-width: 1px !important;
+}
+
 /* Meta elements — Space Grotesk */
 .post-meta,
 .post-date,
