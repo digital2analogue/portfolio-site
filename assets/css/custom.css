@@ -49,9 +49,8 @@
   --font-title-large: var(--font-weight-light) var(--font-size-3xl)/var(--font-line-height-tight) var(--font-family-sans);
   --font-title-medium: var(--font-weight-light) var(--font-size-2xl)/var(--font-line-height-snug) var(--font-family-sans);
   --font-title-small: var(--font-weight-medium) var(--font-size-xl)/var(--font-line-height-snug) var(--font-family-sans);
-  --font-heading-1: var(--font-weight-light) var(--font-size-lg)/var(--font-line-height-snug) var(--font-family-sans);
-  --font-heading-2: var(--font-weight-regular) var(--font-size-md)/var(--font-line-height-snug) var(--font-family-sans);
-  --font-body: var(--font-weight-regular) var(--font-size-base)/var(--font-line-height-normal) var(--font-family-serif);
+  --font-body-medium: var(--font-weight-regular) var(--font-size-base)/var(--font-line-height-normal) var(--font-family-serif);
+  --font-body-small: var(--font-weight-regular) var(--font-size-sm)/var(--font-line-height-normal) var(--font-family-serif);
   --font-label-medium: var(--font-weight-regular) var(--font-size-sm)/var(--font-line-height-snug) var(--font-family-sans);
   --font-label-small: var(--font-weight-regular) var(--font-size-xs)/var(--font-line-height-snug) var(--font-family-sans);
 }
@@ -106,24 +105,24 @@ nav a:hover {
 
 /* Base body font — Spectral serif for reading */
 body {
-  font: var(--font-body) !important;
+  font: var(--font-body-medium) !important;
   font-optical-sizing: auto;
   letter-spacing: 0.005em;
 }
 
 /* Headings — Space Grotesk for structure and precision */
 h1, .content h1 {
-  font: var(--font-heading-1) !important;
+  font: var(--font-title-medium) !important;
   letter-spacing: -0.025em;
 }
 
 h2, .content h2 {
-  font: var(--font-heading-2) !important;
+  font: var(--font-title-small) !important;
   letter-spacing: -0.025em;
 }
 
 h3, h4, h5, h6, .content h3, .content h4 {
-  font: var(--font-heading-2) !important;
+  font: var(--font-title-small) !important;
   letter-spacing: -0.025em;
 }
 
@@ -175,7 +174,7 @@ footer {
 .post-content p,
 .post-content li,
 .post-content blockquote {
-  font: var(--font-body) !important;
+  font: var(--font-body-medium) !important;
   font-optical-sizing: auto;
 }
 
@@ -197,7 +196,7 @@ footer {
 .post-summary,
 .featured-summary,
 .card-summary {
-  font: var(--font-body) !important;
+  font: var(--font-body-medium) !important;
   font-style: normal;
   color: var(--color-text-muted);
 }
