@@ -233,6 +233,12 @@ code, pre, .highlight {
   line-height: var(--font-line-height-snug) !important;
   text-transform: uppercase !important;
   letter-spacing: 0.15em !important;
+  color: var(--color-text-muted) !important;
+}
+
+/* Footnote paragraph after company list */
+.cover-intro ul + p {
+  color: var(--color-text-muted) !important;
 }
 
 p .summary { text-align: center; font-style: italic; }
