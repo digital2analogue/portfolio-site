@@ -236,8 +236,11 @@ code, pre, .highlight {
   color: var(--color-text-muted) !important;
 }
 
-/* Footnote paragraph after company list */
-.cover-intro ul + p {
+/* Hugo-generated footnote section */
+.cover-intro .footnotes,
+.cover-intro .footnotes p,
+.cover-intro .footnotes li {
+  font: var(--font-body-medium) !important;
   color: var(--color-text-muted) !important;
 }
 
