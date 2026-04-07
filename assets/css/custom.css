@@ -211,7 +211,6 @@ code, pre, .highlight {
    ============================================= */
 .cover-content { max-width: none !important; width: 100% !important; text-align: left !important; }
 .cover-content p { text-align: left !important; }
-.cover-intro p:nth-of-type(-n+2) { font: var(--font-title-medium) !important; letter-spacing: -0.01em; }
 .cover-intro a { color: var(--color-text-primary) !important; text-decoration: underline !important; text-decoration-color: var(--color-text-primary) !important; text-underline-offset: 3px !important; }
 .cover-intro a:hover { color: var(--color-green-accent) !important; text-decoration-color: rgba(74, 222, 110, 0.7) !important; }
 p .summary { text-align: center; font-style: italic; }
