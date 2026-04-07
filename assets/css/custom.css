@@ -1,3 +1,5 @@
+@import url('variables.css');
+
 /* Custom CSS template overrides */
 
 /* =============================================
@@ -87,7 +89,7 @@ nav a:hover {
 /* Base body font — Spectral serif for reading */
 body {
   font-family: 'Spectral', Georgia, 'Times New Roman', serif !important;
-  font-weight: 400 !important;
+  font-weight: var(--font-weight-regular) !important;
   font-optical-sizing: auto;
   letter-spacing: 0.005em;
 }
@@ -100,7 +102,7 @@ h1, h2, h3, h4, h5, h6,
 .content h3,
 .content h4 {
   font-family: 'Space Grotesk', system-ui, sans-serif !important;
-  font-weight: 300 !important;
+  font-weight: var(--font-weight-light) !important;
   letter-spacing: -0.025em;
 }
 
@@ -129,7 +131,7 @@ nav a,
 .footer-content,
 footer {
   font-family: 'Space Grotesk', system-ui, sans-serif !important;
-  font-weight: 400 !important;
+  font-weight: var(--font-weight-regular) !important;
   letter-spacing: 0.03em;
 }
 
@@ -146,7 +148,7 @@ footer {
 .category,
 .terms-item {
   font-family: 'Space Grotesk', system-ui, sans-serif !important;
-  font-weight: 400 !important;
+  font-weight: var(--font-weight-regular) !important;
   letter-spacing: 0.03em;
 }
 
@@ -155,7 +157,7 @@ footer {
 .post-content li,
 .post-content blockquote {
   font-family: 'Spectral', Georgia, 'Times New Roman', serif !important;
-  font-weight: 400 !important;
+  font-weight: var(--font-weight-regular) !important;
   line-height: 1.72;
   font-optical-sizing: auto;
 }
@@ -163,7 +165,7 @@ footer {
 /* Post titles — Space Grotesk */
 .post-title {
   font-family: 'Space Grotesk', system-ui, sans-serif !important;
-  font-weight: 300 !important;
+  font-weight: var(--font-weight-light) !important;
   letter-spacing: -0.025em;
 }
 
@@ -172,7 +174,7 @@ footer {
 .featured-card .title,
 .card-title {
   font-family: 'Space Grotesk', system-ui, sans-serif !important;
-  font-weight: 300 !important;
+  font-weight: var(--font-weight-light) !important;
   letter-spacing: -0.02em;
 }
 
@@ -181,7 +183,7 @@ footer {
 .featured-summary,
 .card-summary {
   font-family: 'Spectral', Georgia, 'Times New Roman', serif !important;
-  font-weight: 400 !important;
+  font-weight: var(--font-weight-regular) !important;
   font-style: normal;
   color: var(--text-tertiary);
 }
