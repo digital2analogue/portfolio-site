@@ -41,10 +41,10 @@
   --font-line-height-relaxed: 1.7;
   --color-bg-primary: var(--color-green-950);
   --color-bg-secondary: var(--color-green-900);
-  --color-text-primary: var(--color-green-200);
-  --color-text-secondary: var(--color-green-400);
-  --color-text-muted: var(--color-green-600);
-  --color-accent: var(--color-green-accent);
+  --color-foreground-primary: var(--color-green-200);
+  --color-foreground-secondary: var(--color-green-400);
+  --color-foreground-muted: var(--color-green-600);
+  --color-foreground-accent: var(--color-green-accent);
   --color-border-default: var(--color-green-900);
   --font-title-large: var(--font-weight-regular) var(--font-size-3xl)/var(--font-line-height-tight) var(--font-family-sans);
   --font-title-medium: var(--font-weight-regular) var(--font-size-2xl)/var(--font-line-height-snug) var(--font-family-sans);
@@ -64,9 +64,9 @@
    ============================================= */
 
 a {
-  color: var(--color-text-primary) !important;
+  color: var(--color-foreground-primary) !important;
   text-decoration: underline !important;
-  text-decoration-color: var(--color-text-primary) !important;
+  text-decoration-color: var(--color-foreground-primary) !important;
   text-underline-offset: 3px !important;
   transition: color 0.15s ease, text-decoration-color 0.15s ease !important;
 }
@@ -82,7 +82,7 @@ a:hover {
 .navbar .menu a,
 .navbar .menu-item a,
 nav a {
-  color: var(--color-text-primary) !important;
+  color: var(--color-foreground-primary) !important;
   text-decoration: none !important;
 }
 
@@ -97,7 +97,7 @@ nav a:hover {
 /* Brand/site title in nav */
 .navbar .brand,
 .navbar .brand a {
-  color: var(--color-text-primary) !important;
+  color: var(--color-foreground-primary) !important;
 }
 
 /* =============================================
@@ -134,7 +134,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
 .post-title a,
 .featured-title a,
 .card-title a {
-  color: var(--color-text-primary) !important;
+  color: var(--color-foreground-primary) !important;
 }
 
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover,
@@ -201,7 +201,7 @@ footer {
 .card-summary {
   font: var(--font-body-large) !important;
   font-style: normal;
-  color: var(--color-text-muted);
+  color: var(--color-foreground-muted);
 }
 
 /* Code blocks */
@@ -214,7 +214,7 @@ code, pre, .highlight {
    ============================================= */
 .cover-content { max-width: none !important; width: 100% !important; text-align: left !important; }
 .cover-content p { text-align: left !important; }
-.cover-intro a { color: var(--color-text-primary) !important; text-decoration: underline !important; text-decoration-color: var(--color-text-primary) !important; text-underline-offset: 3px !important; }
+.cover-intro a { color: var(--color-foreground-primary) !important; text-decoration: underline !important; text-decoration-color: var(--color-foreground-primary) !important; text-underline-offset: 3px !important; }
 .cover-intro a:hover { color: var(--color-green-accent) !important; text-decoration-color: rgba(74, 222, 110, 0.7) !important; }
 /* Cover intro paragraphs — title-small */
 .cover-intro p:nth-of-type(-n+2) {
@@ -233,7 +233,7 @@ code, pre, .highlight {
   line-height: var(--font-line-height-snug) !important;
   text-transform: uppercase !important;
   letter-spacing: 0.15em !important;
-  color: var(--color-text-muted) !important;
+  color: var(--color-foreground-muted) !important;
 }
 
 /* Hugo-generated footnote section */
@@ -241,9 +241,9 @@ code, pre, .highlight {
 .cover-intro .footnotes p,
 .cover-intro .footnotes li {
   font: var(--font-body-medium) !important;
-  color: var(--color-text-muted) !important;
+  color: var(--color-foreground-muted) !important;
 }
 
 p .summary { text-align: center; font-style: italic; }
 .post-content p > img { display: block; }
-.post-content p > img + em { display: block; text-align: center; font-size: 0.95rem; color: var(--color-text-secondary); margin-top: -1em; }
+.post-content p > img + em { display: block; text-align: center; font-size: 0.95rem; color: var(--color-foreground-secondary); margin-top: -1em; }
