@@ -436,4 +436,9 @@ p .summary { text-align: center; font-style: italic; }
   .resume-container {
     padding: 0 var(--space-xl);
   }
+
+  .resume-company {
+    padding-bottom: var(--space-2xl);
+    margin-bottom: var(--space-2xl);
+  }
 }
