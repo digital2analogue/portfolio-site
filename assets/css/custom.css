@@ -220,19 +220,13 @@ code, pre, .highlight {
 .cover-intro a:hover { color: var(--color-green-accent) !important; text-decoration-color: rgba(74, 222, 110, 0.7) !important; }
 /* Cover intro paragraphs — title-medium */
 .cover-intro p:nth-of-type(-n+2) {
-  font-family: var(--font-family-sans) !important;
-  font-weight: var(--font-weight-regular) !important;
-  font-size: var(--font-size-2xl) !important;
-  line-height: var(--font-line-height-snug) !important;
+  font: var(--font-title-medium) !important;
   letter-spacing: -0.01em !important;
 }
 
 /* "I've worked at:" label — label-large (matches river-intro .work h2) */
 .cover-intro p:has(+ ul) {
-  font-family: var(--font-family-sans) !important;
-  font-weight: var(--font-weight-regular) !important;
-  font-size: var(--font-size-base) !important;
-  line-height: var(--font-line-height-snug) !important;
+  font: var(--font-label-large) !important;
   text-transform: uppercase !important;
   letter-spacing: 0.15em !important;
   color: var(--color-foreground-muted) !important;
