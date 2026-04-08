@@ -57,6 +57,14 @@
   --font-label-large: 400 1rem/1.25 'Space Grotesk', sans-serif;
   --font-label-medium: 400 0.875rem/1.25 'Space Grotesk', sans-serif;
   --font-label-small: 400 0.75rem/1.25 'Space Grotesk', sans-serif;
+
+  /* Primitive: Spacing */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 48px;
+  --space-2xl: 80px;
 }
 
 /* =============================================
@@ -255,7 +263,7 @@ p .summary { text-align: center; font-style: italic; }
 .resume-container {
   max-width: 720px;
   margin: 0 auto;
-  padding: 0 var(--space-2xl);
+  padding: 0 calc(var(--space-2xl) * 1.5);
 }
 
 /* Header */
@@ -289,8 +297,8 @@ p .summary { text-align: center; font-style: italic; }
 
 /* Company blocks */
 .resume-company {
-  padding-bottom: calc(var(--space-2xl) * 1.5);
-  margin-bottom: calc(var(--space-2xl) * 1.5);
+  padding-bottom: calc(var(--space-2xl) * 2);
+  margin-bottom: calc(var(--space-2xl) * 2);
   border-bottom: 1px solid var(--color-border-default);
 }
 
@@ -364,7 +372,7 @@ p .summary { text-align: center; font-style: italic; }
 }
 
 .resume-highlights li {
-  font: var(--font-body-medium) !important;
+  font: var(--font-body-small) !important;
   color: var(--color-foreground-secondary);
   padding-left: var(--space-lg);
   position: relative;
