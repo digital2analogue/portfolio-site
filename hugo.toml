@@ -25,7 +25,7 @@ theme = 'yassi'
     weight = 40
 
   [[menu.main]]
-    name = "Résumé"
+    name = "Résumé/CV"
     pageRef = "/resume"
     weight = 50
     
