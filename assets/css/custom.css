@@ -218,11 +218,11 @@ code, pre, .highlight {
 .cover-content p { text-align: left !important; }
 .cover-intro a { color: var(--color-foreground-primary) !important; text-decoration: underline !important; text-decoration-color: var(--color-foreground-primary) !important; text-underline-offset: 3px !important; }
 .cover-intro a:hover { color: var(--color-green-accent) !important; text-decoration-color: rgba(74, 222, 110, 0.7) !important; }
-/* Cover intro paragraphs — title-small */
+/* Cover intro paragraphs — title-medium */
 .cover-intro p:nth-of-type(-n+2) {
   font-family: var(--font-family-sans) !important;
   font-weight: var(--font-weight-regular) !important;
-  font-size: var(--font-size-lg) !important;
+  font-size: var(--font-size-2xl) !important;
   line-height: var(--font-line-height-snug) !important;
   letter-spacing: -0.01em !important;
 }
