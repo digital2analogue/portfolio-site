@@ -243,3 +243,189 @@ code, pre, .highlight {
 p .summary { text-align: center; font-style: italic; }
 .post-content p > img { display: block; }
 .post-content p > img + em { display: block; text-align: center; font-size: 0.95rem; color: var(--color-foreground-secondary); margin-top: -1em; }
+
+/* =============================================
+   RESUME PAGE
+   ============================================= */
+
+.resume-page {
+  padding: var(--space-2xl) 0;
+}
+
+.resume-container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+}
+
+/* Header */
+.resume-title {
+  font: var(--font-title-large) !important;
+  color: var(--color-foreground-primary);
+  letter-spacing: -0.025em;
+  margin: 0 0 var(--space-sm);
+}
+
+.resume-contact {
+  font: var(--font-label-medium) !important;
+  color: var(--color-foreground-muted);
+  margin: 0 0 var(--space-2xl);
+}
+
+.resume-contact a {
+  color: var(--color-foreground-muted) !important;
+  text-decoration-color: var(--color-foreground-muted) !important;
+}
+
+.resume-contact a:hover {
+  color: var(--color-foreground-accent) !important;
+  text-decoration-color: var(--color-foreground-accent) !important;
+}
+
+.resume-contact-sep {
+  margin: 0 var(--space-sm);
+  color: var(--color-foreground-muted);
+}
+
+/* Company blocks */
+.resume-company {
+  padding-bottom: var(--space-2xl);
+  margin-bottom: var(--space-2xl);
+  border-bottom: 1px solid var(--color-border-default);
+}
+
+.resume-company-intro {
+  margin-bottom: var(--space-xl);
+}
+
+.resume-company-name {
+  font: var(--font-title-medium) !important;
+  color: var(--color-foreground-primary);
+  letter-spacing: -0.02em;
+  margin: 0 0 var(--space-xs);
+}
+
+.resume-employed {
+  font: var(--font-label-medium) !important;
+  color: var(--color-foreground-muted);
+  margin: 0;
+}
+
+/* Role blocks */
+.resume-role {
+  margin-bottom: var(--space-xl);
+}
+
+.resume-role:last-child {
+  margin-bottom: 0;
+}
+
+.resume-role-title {
+  font: var(--font-title-small) !important;
+  color: var(--color-foreground-primary);
+  letter-spacing: -0.015em;
+  margin: 0 0 var(--space-xs);
+}
+
+.resume-role-dates {
+  display: block;
+  font: var(--font-label-medium) !important;
+  color: var(--color-foreground-muted);
+  margin-bottom: var(--space-md);
+}
+
+.resume-role-body p {
+  font: var(--font-body-large) !important;
+  color: var(--color-foreground-secondary);
+  margin-bottom: var(--space-md);
+}
+
+.resume-role-body p:last-child {
+  margin-bottom: 0;
+}
+
+/* Highlights */
+.resume-highlights {
+  margin-top: var(--space-md);
+}
+
+.resume-highlights-label {
+  font: var(--font-label-small) !important;
+  color: var(--color-foreground-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 0 0 var(--space-sm);
+}
+
+.resume-highlights ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.resume-highlights li {
+  font: var(--font-body-large) !important;
+  color: var(--color-foreground-secondary);
+  padding-left: var(--space-lg);
+  position: relative;
+  margin-bottom: var(--space-sm);
+}
+
+.resume-highlights li:last-child {
+  margin-bottom: 0;
+}
+
+.resume-highlights li::before {
+  content: '–';
+  position: absolute;
+  left: 0;
+  color: var(--color-foreground-muted);
+}
+
+/* Education */
+.resume-education {
+  padding-top: var(--space-xs);
+}
+
+.resume-section-heading {
+  font: var(--font-title-medium) !important;
+  color: var(--color-foreground-primary);
+  letter-spacing: -0.02em;
+  margin: 0 0 var(--space-xl);
+}
+
+.resume-degree {
+  margin-bottom: var(--space-xl);
+}
+
+.resume-degree--last {
+  margin-bottom: 0;
+}
+
+.resume-degree-name {
+  font: var(--font-title-small) !important;
+  color: var(--color-foreground-primary);
+  letter-spacing: -0.015em;
+  margin: 0 0 var(--space-xs);
+}
+
+.resume-degree-details {
+  font: var(--font-label-medium) !important;
+  color: var(--color-foreground-muted);
+  margin: 0 0 var(--space-xs);
+}
+
+.resume-degree-details:last-child {
+  margin-bottom: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .resume-page {
+    padding: var(--space-xl) 0;
+  }
+
+  .resume-container {
+    padding: 0 var(--space-md);
+  }
+}

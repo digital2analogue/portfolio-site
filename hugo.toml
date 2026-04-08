@@ -23,6 +23,11 @@ theme = 'yassi'
     name = "About"
     pageRef = "/about"
     weight = 40
+
+  [[menu.main]]
+    name = "Résumé"
+    pageRef = "/resume"
+    weight = 50
     
 [params]
 # Color theme: Phosphor Pulse
