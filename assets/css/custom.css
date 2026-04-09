@@ -185,6 +185,14 @@ footer {
   border-bottom-width: 1px !important;
 }
 
+/* Theme toggle icons — use body text color instead of yellow/blue */
+.sun-icon,
+.moon-icon,
+[data-theme="dark"] .sun-icon,
+[data-theme="dark"] .moon-icon {
+  color: var(--color-foreground-primary) !important;
+}
+
 /* Theme toggle — match brand underline: 1px accent-color, no blue outline */
 .theme-toggle {
   border-width: 1px !important;
