@@ -18,8 +18,8 @@
   --color-neutral-black: #000000;
 
   /* Semantic: Colors */
-  --color-bg-primary: #0A0D0A;
-  --color-bg-secondary: #1E241E;
+  --color-background-default: #0A0D0A;
+  --color-background-alt: #1E241E;
   --color-foreground-primary: #C8CFC4;
   --color-foreground-secondary: #A0A89A;
   --color-foreground-muted: #8B9683;
@@ -71,8 +71,8 @@
    Dark is the default (set in :root above); light inverts to warm paper tones
    with the green palette repurposed as ink colors. */
 [data-theme="light"] {
-  --color-bg-primary: #f6f7f4;
-  --color-bg-secondary: #eceee9;
+  --color-background-default: #f6f7f4;
+  --color-background-alt: #eceee9;
   --color-foreground-primary: #1e241e;
   --color-foreground-secondary: #3a473a;
   --color-foreground-muted: #5c6b5c;
@@ -130,7 +130,7 @@ nav a:hover {
 
 /* Base body font — Spectral serif for reading */
 body {
-  background-color: var(--color-bg-primary) !important;
+  background-color: var(--color-background-default) !important;
   font: var(--font-body-large) !important;
   font-optical-sizing: auto;
   letter-spacing: 0.005em;
