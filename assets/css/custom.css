@@ -185,6 +185,19 @@ footer {
   border-bottom-width: 1px !important;
 }
 
+/* Theme toggle — match brand underline: 1px accent-color, no blue outline */
+.theme-toggle {
+  border-width: 1px !important;
+  border-color: var(--accent-color) !important;
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus,
+.theme-toggle:focus-visible {
+  border-color: var(--accent-color) !important;
+  outline-color: var(--accent-color) !important;
+}
+
 /* Meta elements — Space Grotesk */
 .post-meta,
 .post-date,
