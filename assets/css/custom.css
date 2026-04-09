@@ -442,3 +442,69 @@ p .summary { text-align: center; font-style: italic; }
     margin-bottom: var(--space-xl);
   }
 }
+
+/* =============================================
+   MOBILE NAV: inline Work + Résumé/CV only
+   Replaces hamburger/slide-out drawer at ≤768px
+   ============================================= */
+@media (max-width: 768px) {
+  /* Hide hamburger — no drawer needed */
+  .navbar-toggle {
+    display: none;
+  }
+
+  /* Reset fixed slide-out to inline row */
+  .navbar-menu {
+    position: static;
+    right: auto;
+    width: auto;
+    height: auto;
+    background: transparent;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: var(--space-lg);
+    box-shadow: none;
+    transition: none;
+    overflow-y: visible;
+    z-index: auto;
+  }
+
+  /* Reset vertical stacking */
+  .navbar-nav {
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+    gap: var(--space-lg);
+  }
+
+  .navbar-nav ul {
+    flex-direction: row;
+    width: auto;
+    gap: var(--space-lg);
+  }
+
+  /* Reset oversized mobile link tap target */
+  .navbar-nav a {
+    font-size: inherit;
+    width: auto;
+    padding: 0;
+  }
+
+  /* Reset actions strip */
+  .navbar-actions {
+    width: auto;
+    padding-top: 0;
+    border-top: none;
+  }
+
+  /* Hide all nav items, then reveal only Work + Résumé/CV */
+  .navbar-nav li {
+    display: none;
+  }
+
+  .navbar-nav li:has(a[href^="/projects"]),
+  .navbar-nav li:has(a[href^="/resume"]) {
+    display: inline-flex;
+  }
+}
