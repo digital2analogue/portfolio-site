@@ -218,6 +218,13 @@ footer {
   letter-spacing: -0.02em;
 }
 
+/* Card anchor wrapper — suppress underline so it doesn't bleed onto summary text.
+   text-decoration on a parent <a> cannot be removed by child elements, so the fix
+   must be on the <a> itself. Specificity (0,1,1) beats global a (0,0,1). */
+.featured-card a {
+  text-decoration: none !important;
+}
+
 /* Summaries — Spectral body */
 .post-summary,
 .featured-summary,
@@ -225,7 +232,6 @@ footer {
   font: var(--font-body-medium) !important;
   font-style: normal;
   color: var(--color-foreground-muted);
-  text-decoration: none;
 }
 
 /* Code blocks */
