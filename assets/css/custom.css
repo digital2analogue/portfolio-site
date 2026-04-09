@@ -67,6 +67,19 @@
   --space-2xl: 80px;
 }
 
+/* Light mode: semantic token overrides
+   Dark is the default (set in :root above); light inverts to warm paper tones
+   with the green palette repurposed as ink colors. */
+[data-theme="light"] {
+  --color-bg-primary: #f6f7f4;
+  --color-bg-secondary: #eceee9;
+  --color-foreground-primary: #1e241e;
+  --color-foreground-secondary: #3a473a;
+  --color-foreground-muted: #5c6b5c;
+  --color-foreground-accent: #2a7a40;
+  --color-border-default: #d0d5cc;
+}
+
 /* =============================================
    EXPLICIT LINK & ACCENT COLOR OVERRIDES
    Resting: text color + underline (matches river-intro)
