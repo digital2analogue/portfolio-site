@@ -209,9 +209,10 @@ footer {
 .post-summary,
 .featured-summary,
 .card-summary {
-  font: var(--font-body-large) !important;
+  font: var(--font-body-medium) !important;
   font-style: normal;
   color: var(--color-foreground-muted);
+  text-decoration: none;
 }
 
 /* Code blocks */
