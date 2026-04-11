@@ -195,7 +195,7 @@ footer {
 
 /* Navbar brand underline — thinner than theme default (3px → 1px) */
 .navbar-brand a {
-  border-bottom-width: 1px !important;
+  border-bottom-width: 1px;
 }
 
 /* Theme toggle icons — use body text color instead of yellow/blue */
@@ -274,7 +274,7 @@ footer {
    text-decoration on a parent <a> cannot be removed by child elements, so the fix
    must be on the <a> itself. Specificity (0,1,1) beats global a (0,0,1). */
 .featured-card a {
-  text-decoration: none !important;
+  text-decoration: none;
 }
 
 /* Summaries — Spectral body */
