@@ -48,15 +48,15 @@
   --font-weight-bold: 700;
 
   /* Semantic: Typography (composite shorthand) */
-  --font-title-large: 400 2.5rem/1.1 'Space Grotesk', sans-serif;
-  --font-title-medium: 400 1.5rem/1.25 'Space Grotesk', sans-serif;
-  --font-title-small: 400 1.125rem/1.25 'Space Grotesk', sans-serif;
-  --font-body-large: 400 1rem/1.5 Spectral, Georgia, serif;
-  --font-body-medium: 400 0.875rem/1.5 Spectral, Georgia, serif;
-  --font-body-small: 400 0.75rem/1.5 Spectral, Georgia, serif;
-  --font-label-large: 400 1rem/1.25 'Space Grotesk', sans-serif;
-  --font-label-medium: 400 0.875rem/1.25 'Space Grotesk', sans-serif;
-  --font-label-small: 400 0.75rem/1.25 'Space Grotesk', sans-serif;
+  --font-title-large: var(--font-weight-regular) var(--font-size-3xl)/var(--font-line-height-tight) var(--font-family-sans);
+  --font-title-medium: var(--font-weight-regular) var(--font-size-2xl)/var(--font-line-height-snug) var(--font-family-sans);
+  --font-title-small: var(--font-weight-regular) var(--font-size-lg)/var(--font-line-height-snug) var(--font-family-sans);
+  --font-body-large: var(--font-weight-regular) var(--font-size-base)/var(--font-line-height-normal) var(--font-family-serif);
+  --font-body-medium: var(--font-weight-regular) var(--font-size-sm)/var(--font-line-height-normal) var(--font-family-serif);
+  --font-body-small: var(--font-weight-regular) var(--font-size-xs)/var(--font-line-height-normal) var(--font-family-serif);
+  --font-label-large: var(--font-weight-regular) var(--font-size-base)/var(--font-line-height-snug) var(--font-family-sans);
+  --font-label-medium: var(--font-weight-regular) var(--font-size-sm)/var(--font-line-height-snug) var(--font-family-sans);
+  --font-label-small: var(--font-weight-regular) var(--font-size-xs)/var(--font-line-height-snug) var(--font-family-sans);
 
   /* Primitive: Spacing */
   --space-xs: 4px;
@@ -65,6 +65,18 @@
   --space-lg: 24px;
   --space-xl: 48px;
   --space-2xl: 80px;
+
+  /* Primitive: Radius */
+  --radius-sm: 4px;
+
+  /* Primitive: Shadow */
+  --shadow-lg: 0 8px 48px rgba(0, 0, 0, 0.6);
+
+  /* Primitive: Motion */
+  --duration-fast: 0.18s;
+
+  /* Semantic: Accent fallback (overridden per-page via Hugo head.html) */
+  --accent-color: var(--color-foreground-accent);
 }
 
 /* Light mode: semantic token overrides
@@ -178,6 +190,7 @@ nav a,
 footer {
   font: var(--font-label-large) !important;
   letter-spacing: 0.03em;
+  background-color: var(--color-background-default) !important;
 }
 
 /* Navbar brand underline — thinner than theme default (3px → 1px) */
@@ -239,12 +252,22 @@ footer {
   font: var(--font-title-medium) !important;
   letter-spacing: -0.02em;
   color: var(--color-foreground-primary);
-  margin: 0 0 var(--space-sm);
 }
 
 /* Card body: padding below image, wraps title + summary */
 .featured-card-body {
-  padding: var(--space-md) var(--space-sm) var(--space-sm);
+  padding: var(--space-md) var(--space-sm) var(--space-sm) var(--space-md);
+}
+
+/* Title and summary inside card body — single source of truth for spacing and alignment */
+.featured-card-body .featured-card-title {
+  margin: 0 0 var(--space-xs);
+  padding-left: 0;
+}
+
+.featured-card-body .featured-summary {
+  margin: 0;
+  padding-left: 0;
 }
 
 /* Card anchor wrapper — suppress underline so it doesn't bleed onto summary text.
@@ -265,7 +288,7 @@ footer {
 
 /* Code blocks */
 code, pre, .highlight {
-  font-family: 'Monaco', 'Courier New', monospace !important;
+  font-family: var(--font-family-mono) !important;
 }
 
 /* =============================================
@@ -558,4 +581,29 @@ p .summary { text-align: center; font-style: italic; }
   .navbar-nav li:has(a[href^="/resume"]) {
     display: inline-flex;
   }
+}
+
+/* =============================================
+   LIGHTBOX
+   ============================================= */
+.post-content img { cursor: zoom-in; }
+
+#lbx-overlay {
+  display: none;
+  position: fixed; inset: 0; z-index: 9999;
+  background: color-mix(in srgb, var(--color-background-default) 92%, transparent);
+  align-items: center; justify-content: center;
+  cursor: zoom-out;
+}
+#lbx-overlay.open { display: flex; }
+#lbx-img {
+  max-width: 92vw; max-height: 92vh;
+  object-fit: contain;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-lg);
+  animation: lbx-in var(--duration-fast) ease;
+}
+@keyframes lbx-in {
+  from { opacity: 0; transform: scale(0.94); }
+  to   { opacity: 1; transform: scale(1); }
 }
