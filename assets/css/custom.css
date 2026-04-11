@@ -233,10 +233,18 @@ footer {
 
 /* Featured/card titles — title-medium */
 .featured-title,
+.featured-card-title,
 .featured-card .title,
 .card-title {
   font: var(--font-title-medium) !important;
   letter-spacing: -0.02em;
+  color: var(--color-foreground-primary);
+  margin: 0 0 var(--space-sm);
+}
+
+/* Card body: padding below image, wraps title + summary */
+.featured-card-body {
+  padding: var(--space-md) var(--space-sm) var(--space-sm);
 }
 
 /* Card anchor wrapper — suppress underline so it doesn't bleed onto summary text.

@@ -15,28 +15,20 @@
       {{ end }}
       <a href="{{ $projectUrl }}" {{ if $isExternal }}target="_blank" rel="noopener noreferrer" {{ end }}>
         {{ if .Params.main_image }}
-        <div class="featured-image" style="background-image: url('{{ .Params.main_image }}');">
-          <div class="featured-overlay">
-            <h3 class="featured-card-title">
-              {{ .Title }}
-              {{ if $isExternal }}<span class="external-link-icon">↗</span>{{ end }}
-            </h3>
-          </div>
-        </div>
+        <div class="featured-image" style="background-image: url('{{ .Params.main_image }}');"></div>
         {{ else }}
-        <div class="featured-image featured-no-image">
-          <div class="featured-overlay">
-            <h3 class="featured-card-title">
-              {{ .Title }}
-              {{ if $isExternal }}<span class="external-link-icon">↗</span>{{ end }}
-            </h3>
-          </div>
+        <div class="featured-image featured-no-image"></div>
+        {{ end }}
+        <div class="featured-card-body">
+          <h3 class="featured-card-title">
+            {{ .Title }}
+            {{ if $isExternal }}<span class="external-link-icon">↗</span>{{ end }}
+          </h3>
+          {{ $cardSummary := .Params.card_summary | default .Params.summary }}
+          {{ if $cardSummary }}
+          <p class="featured-summary">{{ $cardSummary }}</p>
+          {{ end }}
         </div>
-        {{ end }}
-        {{ $cardSummary := .Params.card_summary | default .Params.summary }}
-        {{ if $cardSummary }}
-        <p class="featured-summary">{{ $cardSummary }}</p>
-        {{ end }}
       </a>
     </article>
     {{ end }}
