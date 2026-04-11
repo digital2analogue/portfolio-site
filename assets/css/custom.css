@@ -264,11 +264,13 @@ code, pre, .highlight {
    LAYOUT OVERRIDES (existing)
    ============================================= */
 .cover-content { max-width: none !important; width: 100% !important; text-align: left !important; }
-.cover-content p { text-align: left !important; }
+.cover-content p,
+.cover-content h1 { text-align: left !important; }
 .cover-intro a { color: var(--color-foreground-primary) !important; text-decoration: underline !important; text-decoration-color: var(--color-foreground-primary) !important; text-underline-offset: 3px !important; }
 .cover-intro a:hover { color: var(--color-green-accent) !important; text-decoration-color: rgba(74, 222, 110, 0.7) !important; }
-/* Cover intro paragraphs — title-medium */
-.cover-intro p:nth-of-type(-n+2) {
+/* Cover intro — h1 + first paragraph styled as title-medium */
+.cover-intro h1,
+.cover-intro p:first-of-type {
   font: var(--font-title-medium) !important;
   letter-spacing: -0.01em !important;
 }
