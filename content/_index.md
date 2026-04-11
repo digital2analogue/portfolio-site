@@ -4,9 +4,10 @@ date = 2026-01-01T08:00:00-07:00
 draft = false
 +++
 
-# I’ve worn many hats, but been focusing on [design systems](/projects/) since 2022. I most notably helped build **OpenTable** and **Capital One’s** design systems.
+# I’ve worn many hats, but been focusing on [design systems](/projects/) since 2022. I most notably helped build **OpenTable** and **Capital One’s** design systems. {#intro}
 
-I believe people are core to building good products and successful design systems. I often write about systems for creativity — and analog life — over on <a href="https://littlem0nsters.substack.com/" target="_blank">my substack</a>. 
+I believe people are core to building good products and successful design systems. I often write about systems for creativity — and analog life — over on <a href="https://littlem0nsters.substack.com/" target="_blank">my substack</a>.
+{.intro-lead}
 
 
 I’ve worked at:
