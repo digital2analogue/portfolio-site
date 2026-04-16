@@ -2,7 +2,10 @@
 
 /* =============================================
    BRAND TOKENS (inlined from design system for Hugo compatibility)
-   Do not edit directly — source of truth is assets/css/variables.css
+   Source of truth: brand-tokens repo → build/css/variables.css
+   Last synced: 2026-04-15
+   NOTE: Spacing scale here (xs=4, sm=8, xl=48, 2xl=80) has NOT yet been
+   migrated to the canonical scale (xs=8, sm=12, xl=32, 2xl=48). Follow-up task.
    ============================================= */
 
 :root {
@@ -20,24 +23,28 @@
   /* Semantic: Colors */
   --color-background-default: #0A0D0A;
   --color-background-alt: #1E241E;
+  --color-background-action: var(--color-green-accent);
   --color-foreground-primary: #C8CFC4;
   --color-foreground-secondary: #A0A89A;
   --color-foreground-muted: #8B9683;
   --color-foreground-accent: #4ADE6E;
+  --color-foreground-action: var(--color-green-accent);
+  --color-foreground-on-action: var(--color-green-950);
   --color-border-default: #1E241E;
 
   /* Primitive: Typography */
-  --font-size-xs: 0.75rem;
-  --font-size-sm: 0.875rem;
-  --font-size-base: 1rem;
-  --font-size-lg: 1.125rem;
-  --font-size-xl: 1.25rem;
-  --font-size-2xl: 1.5rem;
-  --font-size-3xl: 2.5rem;
+  --font-size-xs: 0.75rem;    /* 12px */
+  --font-size-sm: 0.875rem;   /* 14px */
+  --font-size-base: 1rem;     /* 16px */
+  --font-size-md: 1.25rem;    /* 20px */
+  --font-size-lg: 1.5rem;     /* 24px */
+  --font-size-xl: 1.75rem;    /* 28px */
+  --font-size-2xl: 2rem;      /* 32px */
+  --font-size-3xl: 2.5rem;    /* 40px */
   --font-line-height-tight: 1.1;
   --font-line-height-snug: 1.25;
-  --font-line-height-normal: 1.5;
-  --font-line-height-relaxed: 1.75;
+  --font-line-height-normal: 1.6;
+  --font-line-height-relaxed: 1.7;
   --font-family-sans: 'Space Grotesk', sans-serif;
   --font-family-serif: Spectral, Georgia, serif;
   --font-family-mono: 'JetBrains Mono', monospace;
@@ -299,8 +306,13 @@ code, pre, .highlight {
 .cover-content h1 { text-align: left !important; }
 .cover-intro a { color: var(--color-foreground-primary) !important; text-decoration: underline !important; text-decoration-color: var(--color-foreground-primary) !important; text-underline-offset: 3px !important; }
 .cover-intro a:hover { color: var(--color-green-accent) !important; text-decoration-color: rgba(74, 222, 110, 0.7) !important; }
-/* Cover intro — primary heading + lead paragraph styled as title-medium */
-.cover-intro h1,
+/* Cover intro — Harllee-style bold lead + regular supporting paragraph */
+.cover-intro h1 {
+  font: var(--font-title-medium) !important;
+  font-weight: var(--font-weight-semibold) !important;
+  letter-spacing: -0.01em !important;
+}
+
 .intro-lead {
   font: var(--font-title-medium) !important;
   letter-spacing: -0.01em !important;
